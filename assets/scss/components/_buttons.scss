@@ -37,7 +37,7 @@
   $border-radius: $radius
 ) {
   color: $color;
-  background-color: $bg-color;
+  background: $bg-color;
   border: $br-width solid $br-color;
   padding-block: $padding-size * $button_padding_base_block;
   padding-inline: $padding-size * $button_padding_base_inline;
@@ -45,7 +45,7 @@
 
   &:hover {
     color: $h-color;
-    background-color: $h-bg-color;
+    background: $h-bg-color;
     border-color: $h-br-color;
   }
 

@@ -469,15 +469,6 @@ body {
   --color-natural-900: #252525;
 }
 
-[data-theme=dark] {
-  --color-background-default: #000;
-  --color-background-cart: #000;
-  --color-background-cart2: #000;
-  --color-text-default: #fff;
-  --color-text-main: #fff;
-  --color-text-light: #ffd;
-}
-
 .bg-default {
   background-color: var(--color-background-default, #1e1e1e);
 }
@@ -7541,7 +7532,7 @@ name of buttons that uses in project
 */
 .btn-default {
   color: var(--color-text-default);
-  background-color: var(--color-background-default);
+  background: var(--color-background-default);
   border: 1px solid var(--color-background-default);
   padding-block: 0.375rem;
   padding-inline: 0.75rem;
@@ -7549,7 +7540,7 @@ name of buttons that uses in project
 }
 .btn-default:hover {
   color: var(--color-text-default);
-  background-color: var(--color-background-paper);
+  background: var(--color-background-paper);
   border-color: var(--color-background-paper);
 }
 .btn-default:focus {
@@ -7564,7 +7555,7 @@ name of buttons that uses in project
 
 .btn-primary {
   color: var(--color-primary-900);
-  background-color: var(--color-primary);
+  background: var(--color-primary);
   border: 1px solid var(--color-primary);
   padding-block: 0.375rem;
   padding-inline: 0.75rem;
@@ -7572,7 +7563,7 @@ name of buttons that uses in project
 }
 .btn-primary:hover {
   color: var(--color-primary-100);
-  background-color: var(--color-primary-700);
+  background: var(--color-primary-700);
   border-color: var(--color-primary-700);
 }
 .btn-primary:focus {
@@ -7587,7 +7578,7 @@ name of buttons that uses in project
 
 .btn-secondary {
   color: var(--color-secondary-100);
-  background-color: linear-gradient(107.24deg, var(--color-secondary-400) -11.52%, var(--color-secondary) 129.61%);
+  background: linear-gradient(107.24deg, var(--color-secondary-400) -11.52%, var(--color-secondary) 129.61%);
   border: 1px solid var(--color-secondary);
   padding-block: 0.375rem;
   padding-inline: 0.75rem;
@@ -7595,7 +7586,7 @@ name of buttons that uses in project
 }
 .btn-secondary:hover {
   color: var(--color-secondary-900);
-  background-color: var(--color-secondary-300);
+  background: var(--color-secondary-300);
   border-color: var(--color-secondary-300);
 }
 .btn-secondary:focus {
@@ -8020,7 +8011,7 @@ section.single-post-content blockquote {
   justify-content: center;
 }
 section.single-post-content blockquote::before {
-  content: url("../image/quote-up.svg");
+  content: url("../img/quote-up.svg");
 }
 section.single-post-content blockquote p {
   padding-inline: 200px;
@@ -8030,6 +8021,35 @@ section.single-post-content blockquote p {
   section.single-post-content blockquote p {
     padding-inline: 0px;
     padding-bottom: 0px;
+  }
+}
+
+.not-found-image-wrapper {
+  z-index: -200;
+  position: relative;
+  transform: scale(1) translateY(5rem);
+}
+
+.error-404 {
+  transform: scale(1) translateY(-23rem);
+}
+@media screen and (min-width: 1200px) {
+  .error-404 {
+    transform: scale(1) translateY(-15rem);
+  }
+}
+@media screen and (max-width: 1199.8px) {
+  .error-404 {
+    transform: scale(1) translateY(-10rem);
+  }
+}
+
+.go-home-btn {
+  padding: 16px;
+}
+@media screen and (max-width: 479.8px) {
+  .go-home-btn {
+    width: 100%;
   }
 }
 
