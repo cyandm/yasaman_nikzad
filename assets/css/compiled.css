@@ -469,15 +469,6 @@ body {
   --color-natural-900: #252525;
 }
 
-[data-theme=dark] {
-  --color-background-default: #000;
-  --color-background-cart: #000;
-  --color-background-cart2: #000;
-  --color-text-default: #fff;
-  --color-text-main: #fff;
-  --color-text-light: #ffd;
-}
-
 .bg-default {
   background-color: var(--color-background-default, #1e1e1e);
 }
@@ -1076,10 +1067,6 @@ body {
 
 .bg-natural-900 {
   background-color: var(--color-natural-900);
-}
-
-* {
-  transition: background-color 0.3s ease;
 }
 
 .pos-relative {
@@ -7905,6 +7892,10 @@ nav.menu a {
   border-radius: 12px;
 }
 
+.menu-footer-container .footer-menu .current-menu-item::before {
+  background: 0;
+}
+
 .menu-mobile {
   opacity: 0;
   backdrop-filter: blur(5px);
@@ -8020,7 +8011,7 @@ section.single-post-content blockquote {
   justify-content: center;
 }
 section.single-post-content blockquote::before {
-  content: url("../image/quote-up.svg");
+  content: url("../img/quote-up.svg");
 }
 section.single-post-content blockquote p {
   padding-inline: 200px;

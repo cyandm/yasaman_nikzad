@@ -28,6 +28,16 @@ nav.menu {
   }
 }
 
+.menu-footer-container {
+  .footer-menu {
+    .current-menu-item {
+      &::before {
+        background: 0;
+      }
+    }
+  }
+}
+
 .menu-mobile {
   opacity: 0;
   backdrop-filter: blur(5px);
