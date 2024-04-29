@@ -1,21 +1,27 @@
 <?php get_header() ?>
+<?php $post_id = $args['post_id'] ?? get_the_ID(); ?>
 
-<main class="main-service">
+<main class="main-service pos-relative">
 
-    <div class="clr-fix-56">
+    <div class="bg-service-svg-wrapper pos-absolute">
 
-    </div>
-    <div class="bg-service-svg-wrapper">
         <img class="bg-service-svg" src="<?php echo get_template_directory_uri(  ).'/assets/img/bg-service.svg'?>"
             alt="bg-service">
     </div>
 
-    <div class="service-hero-wrapper">
-        <div class="service-hero-txt">
-            <h2><?php the_title()?></h2>
+    <div class="service-hero-wrapper | box-col-5 gap-48 ai-center">
+
+        <div class="service-hero-txt col-span-3 col-span-md-5">
+            <h1 class="fs-title-1"><?php the_title()?></h1>
         </div>
 
-        <div class="sevice-hero-img"></div>
+
+        <div class="service-hero-img col-span-2 col-span-md-5">
+            <?php if (has_post_thumbnail()) : ?>
+            <?php echo get_the_post_thumbnail($post_id, 'full', ['class' => 'service-img radius-16']); ?>
+            <?php endif; ?>
+        </div>
+
     </div>
 
 </main>

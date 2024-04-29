@@ -1,6 +1,25 @@
 @use "../utils" as *;
 
-// .bg-service-svg-wrapper {
-//   position: relative;
-//   z-index: -100;
-// }
+.main-service {
+
+  .bg-service-svg-wrapper {
+    z-index: -100;
+    top: -12vh;
+  }
+
+  .service-hero-wrapper {
+    .service-hero-img {
+      .service-img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include media_query("md", "max") {
+  .service-hero-wrapper {
+    .service-hero-txt {
+      order: 2;
+    }
+  }
+}

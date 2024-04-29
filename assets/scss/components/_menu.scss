@@ -50,6 +50,7 @@ nav.menu {
   }
 
   &.active {
+    z-index: 999;
     opacity: 1;
     pointer-events: all;
 

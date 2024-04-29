@@ -6261,6 +6261,13 @@ title,
   line-height: 189px;
 }
 
+title-1,
+.fs-title-1 {
+  font-size: 76px;
+  font-weight: 600px;
+  line-height: 88px;
+}
+
 title-sm,
 .fs-title-sm {
   font-size: 52px;
@@ -6385,6 +6392,62 @@ caption,
     font-size: 156px;
     font-weight: 600px;
     line-height: 189px;
+  }
+}
+@media (max-width: 1440px) {
+  title-1,
+  .fs-xxl-title-1 {
+    font-size: 76px;
+    font-weight: 600px;
+    line-height: 88px;
+  }
+}
+@media (max-width: 1200px) {
+  title-1,
+  .fs-xl-title-1 {
+    font-size: 76px;
+    font-weight: 600px;
+    line-height: 88px;
+  }
+}
+@media (max-width: 992px) {
+  title-1,
+  .fs-lg-title-1 {
+    font-size: 76px;
+    font-weight: 600px;
+    line-height: 88px;
+  }
+}
+@media (max-width: 768px) {
+  title-1,
+  .fs-md-title-1 {
+    font-size: 76px;
+    font-weight: 600px;
+    line-height: 88px;
+  }
+}
+@media (max-width: 576px) {
+  title-1,
+  .fs-sm-title-1 {
+    font-size: 76px;
+    font-weight: 600px;
+    line-height: 88px;
+  }
+}
+@media (max-width: 480px) {
+  title-1,
+  .fs-xs-title-1 {
+    font-size: 76px;
+    font-weight: 600px;
+    line-height: 88px;
+  }
+}
+@media (max-width: 320px) {
+  title-1,
+  .fs-xxs-title-1 {
+    font-size: 76px;
+    font-weight: 600px;
+    line-height: 88px;
   }
 }
 @media (max-width: 1440px) {
@@ -7907,6 +7970,7 @@ nav.menu a {
   transition: transform 0.3s ease;
 }
 .menu-mobile.active {
+  z-index: 999;
   opacity: 1;
   pointer-events: all;
 }
@@ -8024,6 +8088,19 @@ section.single-post-content blockquote p {
   }
 }
 
+.main-service .bg-service-svg-wrapper {
+  z-index: -100;
+  top: -12vh;
+}
+.main-service .service-hero-wrapper .service-hero-img .service-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 767.8px) {
+  .service-hero-wrapper .service-hero-txt {
+    order: 2;
+  }
+}
 @font-face {
   font-family: "iconsax";
   src: url("../fonts/icons/iconsax/iconsax.eot");
