@@ -8007,6 +8007,11 @@ nav.menu a {
   background: linear-gradient(107deg, var(--color-secondary) -11.52%, var(--color-secondary-400) 129.61%);
 }
 
+.info-cards-wrapper .info-card .info-section {
+  border: 1px solid var(--color-secondary);
+  border-radius: 16px;
+}
+
 @media screen and (max-width: 767.8px) {
   .landmark-archive-wrapper .landmark-image-wrapper {
     display: flex;
