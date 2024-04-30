@@ -43,22 +43,44 @@ function cyn_register_acf_company_settings()
 function cyn_register_acf_service_settings()
 {
 	$fields = [
-
 		cyn_acf_add_text('hours', 'Hours'),
 		cyn_acf_add_text('days', 'Days'),
 		cyn_acf_add_text('weeks', 'Weeks'),
-		cyn_acf_add_group('card', 'cards', [
-			cyn_acf_add_text('title-1', 'Title-1'),
-			cyn_acf_add_text('text-1', 'Text-1'),
-			cyn_acf_add_text('title-2', 'Title-2'),
-			cyn_acf_add_text('text-2', 'Text-2'),
-			cyn_acf_add_text('title-3', 'Title-3'),
-			cyn_acf_add_text('text-3', 'Text-3'),
-		]),
-
-
-
 	];
+
+	//Services Page Info Cards Loop 
+	$info_cards = [];
+
+	for ($i = 1; $i <= 3; $i++) {
+
+		$info_card = cyn_acf_add_group("card_$i", "Card $i", [
+
+			cyn_acf_add_text("title_$i", "Title $i"),
+
+			cyn_acf_add_text("text_$i", "Text $i"),
+
+		]);
+
+		array_push($info_cards, $info_card);
+	}
+
+	$fields = array_merge($fields, $info_cards);
+	//End OF Services Page Info Cards Loop 
+
+
+	//Services Page Slideshow
+	$slideshow_imgs = [];
+
+	for ($i = 1; $i <= 10; $i++) {
+
+		$slideshow_img = cyn_acf_add_image("image_$i", "Image $i");
+
+
+		array_push($slideshow_imgs, $slideshow_img);
+	}
+
+	$fields = array_merge($fields, $slideshow_imgs);
+	//End of Services Page Slideshow
 
 	$location = [
 		[
