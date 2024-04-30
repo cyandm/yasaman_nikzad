@@ -63,6 +63,18 @@
     </div>
 
 
+    <div class="slideshow-wrapper">
+
+        <?php
+        cyn_get_component('slideshow');
+        ?>
+
+    </div>
+
+
+
+
+
 </main>
 
 <?php get_footer() ?>
