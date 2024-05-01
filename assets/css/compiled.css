@@ -7554,26 +7554,26 @@ name of buttons that uses in project
 }
 
 .btn-primary {
-  color: var(--color-primary-900);
+  color: var(--color-secondary-100);
   background: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-secondary);
   padding-block: 0.375rem;
   padding-inline: 0.75rem;
   border-radius: 1rem;
 }
 .btn-primary:hover {
-  color: var(--color-primary-100);
-  background: var(--color-primary-700);
-  border-color: var(--color-primary-700);
+  color: var(--color-secondary-900);
+  background: var(--color-secondary-300);
+  border-color: var(--color-secondary-300);
 }
 .btn-primary:focus {
-  color: var(--color-primary-900);
+  color: var(--color-secondary-100);
   background-color: var(--color-primary);
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 1px var(--color-primary);
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 1px var(--color-secondary);
 }
 .btn-primary:focus:active {
-  box-shadow: 0 0 0 2px var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-secondary);
 }
 
 .btn-secondary {
@@ -8050,6 +8050,16 @@ section.single-post-content blockquote p {
 @media screen and (max-width: 479.8px) {
   .go-home-btn {
     width: 100%;
+  }
+}
+
+.results-bg {
+  width: 100%;
+}
+
+@media screen and (max-width: 767.8px) {
+  .card-gap {
+    gap: 12px;
   }
 }
 

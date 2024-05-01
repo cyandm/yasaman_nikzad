@@ -18,7 +18,7 @@
 	<div class="clr-fix-8"></div>
 	<div class="paragraph">
 		<h1>
-			<?php the_title() 			?>
+			<?php the_title() ?>
 		</h1>
 
 		<time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished"><?php echo get_the_date(); ?></time>
@@ -28,5 +28,4 @@
 		</section>
 	</div>
 </main>
-<?php //get_footer() 
-?>
+<?php get_footer() ?>
