@@ -12,8 +12,8 @@
             <div class="card-gap bg-primary radius-16 p-20 box-col-12 gap-32 title-blog">
                 <!-- فیچر ایمیج بلاگ ها -->
                 <div class="search-blogs-image col-span-3 d-flex ai-center jc-center">
-                    <a href="<?php the_permalink() ?>" class="d-block">
-                        <?= wp_get_attachment_image(get_post_thumbnail_id(), 'full'); ?>
+                    <a href="<?php the_permalink() ?>" class="d-block h-100">
+                        <?= wp_get_attachment_image(get_post_thumbnail_id(), 'full', false, ['class' => 'h-100']); ?>
                     </a>
 
                 </div>
