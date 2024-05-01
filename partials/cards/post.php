@@ -15,7 +15,6 @@
                     <a href="<?php the_permalink() ?>" class="d-block h-100">
                         <?= wp_get_attachment_image(get_post_thumbnail_id(), 'full', false, ['class' => 'h-100']); ?>
                     </a>
-
                 </div>
                 <!-- قسمت متنی باکس -->
                 <div class="col-span-9 txt-blog">
