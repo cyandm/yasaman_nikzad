@@ -46,6 +46,14 @@ function cyn_register_acf_service_settings()
 		cyn_acf_add_text('hours', 'Hours'),
 		cyn_acf_add_text('days', 'Days'),
 		cyn_acf_add_text('weeks', 'Weeks'),
+		cyn_acf_add_text('swiper-info', 'Swiper Info'),
+		// cyn_acf_add_group('info', 'Info', [
+
+		// 	cyn_acf_add_image('info-icon', 'Info Icon'),
+		// 	cyn_acf_add_text('info-text', 'Info Text'),
+		// 	// cyn_acf_add_text('info-btn' , 'Info btn'), 
+		// ]),
+
 	];
 
 	//Services Page Info Cards Loop 
@@ -81,6 +89,28 @@ function cyn_register_acf_service_settings()
 
 	$fields = array_merge($fields, $slideshow_imgs);
 	//End of Services Page Slideshow
+
+
+	//Services Page Features Section
+	$features_cards = [];
+
+	for ($i = 1; $i <= 3; $i++) {
+
+		$features_card = cyn_acf_add_group("feature_card_$i", "Feature_Card $i", [
+
+			cyn_acf_add_image("feature_icon_$i", "Icon $i"),
+
+			cyn_acf_add_text("feature_title_$i", "Title $i"),
+
+			cyn_acf_add_text("feature_text_$i", "Text $i"),
+
+		]);
+
+		array_push($features_cards, $features_card);
+	}
+
+	$fields = array_merge($fields, $features_cards);
+	//End of Services Page Features Section
 
 	$location = [
 		[

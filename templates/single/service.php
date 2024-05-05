@@ -64,11 +64,31 @@
     </div>
 
 
-    <div class="swiper-wrapper m-bs-108">
+    <div class="swiper-main-wrapper m-bs-108">
 
-        <?php
-        cyn_get_component('swiper');
-        ?>
+        <?php cyn_get_component('swiper') ?>
+
+        <div class="swiper-info-wrapper m-bs-80 fs-body text-natural-100">
+            <?php echo get_field('swiper-info') ?>
+        </div>
+
+    </div>
+
+    <div class="feature-cards-main-wrapper m-bs-76 d-flex f-column gap-40 ai-center">
+
+        <div class="feature-txt-wrapper fs-title text-natural-900 pos-absolute pos-md-static">Features</div>
+
+        <div class="feature-cards m-bs-120 d-flex f-column gap-40">
+
+            <?php cyn_get_card('feature') ?>
+
+        </div>
+
+    </div>
+
+    <div class="information-wrapper">
+
+        <div class="information-txt-wrapper fs-title text-natural-900 pos-absolute pos-md-static">Get Information</div>
 
     </div>
 
