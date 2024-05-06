@@ -5,8 +5,7 @@
 
     <div class="bg-service-svg-wrapper pos-absolute">
 
-        <img class="bg-service-svg" src="<?php echo get_template_directory_uri() . '/assets/img/bg-service.svg' ?>"
-            alt="bg-service">
+        <img class="bg-service-svg" src="<?php echo get_template_directory_uri() . '/assets/img/bg-service.svg' ?>" alt="bg-service">
     </div>
 
     <div class="service-hero-wrapper | box-col-5 gap-48 ai-center">
@@ -18,7 +17,7 @@
 
         <div class="service-hero-img col-span-2 col-span-md-5">
             <?php if (has_post_thumbnail()) : ?>
-            <?php echo get_the_post_thumbnail($post_id, 'full', ['class' => 'service-img radius-16']); ?>
+                <?php echo get_the_post_thumbnail($post_id, 'full', ['class' => 'service-img radius-16']); ?>
             <?php endif; ?>
         </div>
 
@@ -93,8 +92,7 @@
 
         <div class="clr-fix-32"></div>
 
-        <div
-            class="information-cta-wrapper m-bs-120 d-flex gap-12 jc-between ai-center f-row f-xl-column bg-primary p-40 radius-16">
+        <div class="information-cta-wrapper m-bs-120 d-flex gap-12 jc-between ai-center f-row f-xl-column bg-primary p-40 radius-16">
 
             <?php cyn_get_component('information') ?>
 
