@@ -86,9 +86,19 @@
 
     </div>
 
-    <div class="information-wrapper">
+    <div class="information-wrapper m-bs-112 d-flex f-column ai-center">
 
-        <div class="information-txt-wrapper fs-title text-natural-900 pos-absolute pos-md-static">Get Information</div>
+        <div class="information-txt-wrapper fs-title m-be-120 text-natural-900 pos-absolute pos-xl-static">Get
+            Information</div>
+
+        <div class="clr-fix-32"></div>
+
+        <div
+            class="information-cta-wrapper m-bs-120 d-flex gap-12 jc-between ai-center f-row f-xl-column bg-primary p-40 radius-16">
+
+            <?php cyn_get_component('information') ?>
+
+        </div>
 
     </div>
 

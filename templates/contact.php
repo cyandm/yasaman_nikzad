@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="col-span-8 col-span-lg-12">
-            <p class="text-center fs-title text-primary-400 fs-lg-title-sm">Contact</p>
+            <p class="text-center fs-title text-primary-400 fs-lg-title-sm"><?php _e('Contact', 'cyn-dm') ?></p>
             <form class="d-grid gap-24" method="post" name="contact">
 
                 <div class="d-flex gap-24">
@@ -34,8 +34,8 @@
             <div class="clr-fix-24"></div>
             <div class="d-flex f-row-reverse">
                 <button class="send-contact-us btn-secondary" type="submit">
-                    <span>Send Message</span><img src="<?php echo get_stylesheet_directory_uri()
-                                                            . "/assets/img/Search.png" ?>" alt="submit-picture-contact">
+                    <span><?php _e('Send Message', 'cyn-dm') ?></span><img src="<?php echo get_stylesheet_directory_uri()
+                                                                                    . "/assets/img/Search.png" ?>" alt="submit-picture-contact">
                 </button>
             </div>
         </div>

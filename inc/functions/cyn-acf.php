@@ -47,12 +47,12 @@ function cyn_register_acf_service_settings()
 		cyn_acf_add_text('days', 'Days'),
 		cyn_acf_add_text('weeks', 'Weeks'),
 		cyn_acf_add_text('swiper-info', 'Swiper Info'),
-		// cyn_acf_add_group('info', 'Info', [
+		cyn_acf_add_group('info', 'Info', [
 
-		// 	cyn_acf_add_image('info-icon', 'Info Icon'),
-		// 	cyn_acf_add_text('info-text', 'Info Text'),
-		// 	// cyn_acf_add_text('info-btn' , 'Info btn'), 
-		// ]),
+			cyn_acf_add_image('info-icon', 'Info Icon'),
+			cyn_acf_add_text('info-text', 'Info Text'),
+			cyn_acf_add_link('info-btn', 'Info btn'),
+		]),
 
 	];
 
@@ -61,11 +61,11 @@ function cyn_register_acf_service_settings()
 
 	for ($i = 1; $i <= 3; $i++) {
 
-		$info_card = cyn_acf_add_group("card_$i", "Card $i", [
+		$info_card = cyn_acf_add_group("card_$i", __("Card $i", 'cyn-dm'), [
 
-			cyn_acf_add_text("title_$i", "Title $i"),
+			cyn_acf_add_text("title_$i", __("Title $i", "cyn-dm")),
 
-			cyn_acf_add_text("text_$i", "Text $i"),
+			cyn_acf_add_text("text_$i", __("Text $i", "cyn-dm")),
 
 		]);
 
@@ -81,7 +81,7 @@ function cyn_register_acf_service_settings()
 
 	for ($i = 1; $i <= 10; $i++) {
 
-		$slideshow_img = cyn_acf_add_image("image_$i", "Image $i");
+		$slideshow_img = cyn_acf_add_image("image_$i", __("Image $i", "cyn-dm"));
 
 
 		array_push($slideshow_imgs, $slideshow_img);
@@ -96,13 +96,13 @@ function cyn_register_acf_service_settings()
 
 	for ($i = 1; $i <= 3; $i++) {
 
-		$features_card = cyn_acf_add_group("feature_card_$i", "Feature_Card $i", [
+		$features_card = cyn_acf_add_group("feature_card_$i", __("Feature Card $i", "cyn-dm"), [
 
-			cyn_acf_add_image("feature_icon_$i", "Icon $i"),
+			cyn_acf_add_image("feature_icon_$i", __("Icon $i", "cyn-dm")),
 
-			cyn_acf_add_text("feature_title_$i", "Title $i"),
+			cyn_acf_add_text("feature_title_$i", __("Title $i", "cyn-dm")),
 
-			cyn_acf_add_text("feature_text_$i", "Text $i"),
+			cyn_acf_add_text("feature_text_$i", __("Text $i", "cyn-dm")),
 
 		]);
 

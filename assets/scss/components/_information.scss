@@ -1,0 +1,51 @@
+@use "../utils" as *;
+
+@include media_query("xl", "min") {
+  .information-wrapper {
+    //   .information-txt-wrapper {
+    //     width: 1188px;
+    //   }
+
+    .information-cta-wrapper {
+      z-index: 100;
+      // width: 1148px;
+      height: 404px;
+      box-shadow: $shadow_info;
+
+      .information-cta-icon-wrapper {
+        bottom: 115px;
+      }
+
+      .information-cta-txt {
+        width: 384px;
+      }
+    }
+  }
+}
+
+.information-cta-btn {
+  .cta-btn {
+    background: linear-gradient(
+      107deg,
+      var(--color-secondary) -11.52%,
+      var(--color-secondary-400) 129.61%
+    );
+  }
+}
+
+@include media_query("xl", "max") {
+  .information-wrapper {
+    .information-txt-wrapper {
+      margin-block-end: 0;
+      width: fit-content;
+    }
+
+    .information-cta-wrapper {
+      margin-block-start: 0;
+
+      .information-cta-txt {
+        width: 100%;
+      }
+    }
+  }
+}
