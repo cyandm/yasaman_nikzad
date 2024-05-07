@@ -7,12 +7,17 @@ for ($i = 1; $i <= 1; $i++) :
 
 <div class="information-cta-icon-wrapper pos-relative">
 
+
     <?php
 
         echo wp_get_attachment_image($information_card["info-icon"], 'full', false, ["class" => "information-cta-icon"]);
 
         ?>
+
+    <div class="information-cta-icon-blur"></div>
+
 </div>
+
 
 <div class="information-cta-txt text-natural-100 fs-h2 m-be-120">
 

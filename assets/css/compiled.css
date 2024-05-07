@@ -8016,6 +8016,7 @@ nav.menu a {
 
 @media screen and (max-width: 991.8px) {
   .info-card {
+    gap: 20px;
     justify-items: center;
   }
   .info-card .info-section {
@@ -8023,13 +8024,14 @@ nav.menu a {
   }
 }
 .swiper {
+  width: 94%;
   height: 668px;
 }
-.swiper .swiper-slide img {
+.swiper .swiper-wrapper img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .swiper .swiper-pagination {
   width: 100% !important;
@@ -8080,9 +8082,13 @@ nav.menu a {
   position: absolute;
 }
 
+@media screen and (max-width: 991.8px) {
+  .swiper-main-wrapper {
+    margin-block-start: 0;
+  }
+}
 .feature-cards {
   z-index: 100;
-  width: 100%;
 }
 
 .feature-card-wrapper-desktop {
@@ -8110,6 +8116,9 @@ nav.menu a {
 }
 
 @media screen and (max-width: 991.8px) {
+  .feature-cards {
+    width: 100%;
+  }
   .feature-cards-main-wrapper {
     gap: 8px;
   }
@@ -8118,7 +8127,7 @@ nav.menu a {
     line-height: 1;
   }
   .feature-cards-main-wrapper .feature-cards {
-    margin-block-start: 8px;
+    margin-block-start: 44px;
   }
   .feature-cards-main-wrapper .feature-cards .feature-card-wrapper-desktop {
     border: 0;
@@ -8166,6 +8175,17 @@ nav.menu a {
   .information-wrapper .information-cta-icon-wrapper {
     bottom: 116px;
   }
+  .information-wrapper .information-cta-icon-wrapper .information-cta-icon-blur {
+    width: 320px;
+    height: 292px;
+    background: linear-gradient(0deg, #282727 75.82%, rgba(142, 138, 138, 0) 82.99%);
+    left: 0;
+    right: 88px;
+    margin: 0 auto;
+    filter: blur(56px);
+    position: absolute;
+    bottom: -84px;
+  }
   .information-wrapper .information-cta-wrapper {
     margin-block-start: 0;
   }
@@ -8173,11 +8193,13 @@ nav.menu a {
     width: 100%;
   }
   .information-wrapper .information-cta-wrapper .information-cta-txt {
+    z-index: 100;
     margin-block-end: 0;
     margin-block-start: -100px;
     text-align: center !important;
   }
   .information-wrapper .information-cta-wrapper .information-cta-btn {
+    z-index: 100;
     margin-block-end: 0;
     width: 100%;
   }
@@ -8274,6 +8296,12 @@ section.single-post-content blockquote p {
 @media screen and (max-width: 767.8px) {
   .service-hero-wrapper .service-hero-txt {
     order: 2;
+  }
+  .service-hero-wrapper .service-hero-txt h1 {
+    font-size: 32px;
+  }
+  .time-line-info-wrapper {
+    margin-block-start: 20px;
   }
 }
 @font-face {

@@ -13,6 +13,7 @@
 
 @include media_query("lg", "max") {
   .info-card {
+    gap: 20px;
     justify-items: center;
 
     .info-section {

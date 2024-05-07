@@ -19,6 +19,14 @@
   .service-hero-wrapper {
     .service-hero-txt {
       order: 2;
+
+      & h1 {
+        font-size: 32px;
+      }
     }
+  }
+
+  .time-line-info-wrapper {
+    margin-block-start: 20px;
   }
 }
