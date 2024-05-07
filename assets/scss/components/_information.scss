@@ -4,21 +4,20 @@
   .information-wrapper {
     //   .information-txt-wrapper {
     //     width: 1188px;
-    //   }
+  }
 
-    .information-cta-wrapper {
-      z-index: 100;
-      // width: 1148px;
-      height: 404px;
-      box-shadow: $shadow_info;
+  .information-cta-wrapper {
+    z-index: 100;
+    // width: 1148px;
+    height: 404px;
+    box-shadow: $shadow_info;
 
-      .information-cta-icon-wrapper {
-        bottom: 115px;
-      }
+    .information-cta-icon-wrapper {
+      bottom: 115px;
+    }
 
-      .information-cta-txt {
-        width: 384px;
-      }
+    .information-cta-txt {
+      width: 384px;
     }
   }
 }
@@ -37,7 +36,7 @@
   .information-wrapper {
     .information-txt-wrapper {
       margin-block-end: 0;
-      width: fit-content;
+      // width: fit-content;
     }
 
     .information-cta-wrapper {

@@ -2,6 +2,7 @@
 
 .feature-cards {
   z-index: 100;
+  width: 100%;
 }
 
 .feature-card-wrapper-desktop {
@@ -29,6 +30,37 @@
 
     &:nth-child(3) {
       margin-left: 575px;
+    }
+  }
+}
+
+@include media_query("lg", "max") {
+  .feature-cards-main-wrapper {
+    gap: 8px;
+    .feature-txt-wrapper {
+      font-size: 48px;
+      line-height: 1;
+    }
+    .feature-cards {
+      margin-block-start: 8px;
+      .feature-card-wrapper-desktop {
+        border: 0;
+        background: 0;
+        align-items: flex-start;
+
+        .feature-card-txt-wrapper {
+          width: 48vw;
+        }
+
+        .feature-card-icon-wrapper {
+          min-width: 44px;
+          height: 60px;
+          padding: 8px;
+        }
+        .feature-card-icon {
+          width: 44px;
+        }
+      }
     }
   }
 }

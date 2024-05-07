@@ -4,9 +4,9 @@ for ($i = 1; $i <= 3; $i++) :
 
     $features_card = get_field("feature_card_$i");
 ?>
-    <div class="feature-card-wrapper-desktop bg-natural-900 d-md-none d-flex jc-start ai-center gap-16 p-20 radius-16">
+    <div class="feature-card-wrapper-desktop bg-natural-900 d-flex jc-start ai-center gap-16 p-20 radius-16">
 
-        <div class="feature-card-icon-wrapper bg-natural-900 p-32 radius-16">
+        <div class="feature-card-icon-wrapper bg-natural-900 p-32 p-lg-8 radius-16">
 
             <?php
 
