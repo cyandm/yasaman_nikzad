@@ -70,14 +70,16 @@
   position: absolute;
 }
 
-@include media_query("md", "max") {
+@include media_query("lg", "max") {
   .swiper-main-wrapper {
     margin-block-start: 0;
   }
+}
 
+@include media_query("md", "max") {
   .swiper-button-next,
   .swiper-button-prev {
     position: static;
-    margin: 0 20px 20px !important;
+    margin: 0 8px 20px !important;
   }
 }
