@@ -8018,20 +8018,23 @@ nav.menu a {
   .info-card {
     gap: 20px;
     justify-items: center;
+    margin-block-end: 120px;
   }
   .info-card .info-section {
     width: 343px;
   }
 }
 .swiper {
-  width: 94%;
   height: 668px;
+}
+.swiper .swiper-wrapper {
+  height: auto !important;
 }
 .swiper .swiper-wrapper img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .swiper .swiper-pagination {
   width: 100% !important;
@@ -8082,9 +8085,14 @@ nav.menu a {
   position: absolute;
 }
 
-@media screen and (max-width: 991.8px) {
+@media screen and (max-width: 767.8px) {
   .swiper-main-wrapper {
     margin-block-start: 0;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: static;
+    margin: 0 20px 20px !important;
   }
 }
 .feature-cards {
@@ -8302,6 +8310,7 @@ section.single-post-content blockquote p {
   }
   .time-line-info-wrapper {
     margin-block-start: 20px;
+    align-items: center;
   }
 }
 @font-face {

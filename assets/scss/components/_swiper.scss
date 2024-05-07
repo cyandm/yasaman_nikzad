@@ -1,14 +1,16 @@
 @use "../utils" as *;
 
 .swiper {
-  width: 94%;
   height: 668px;
 
+  .swiper-wrapper {
+    height: auto !important;
+  }
   .swiper-wrapper img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .swiper-pagination {
@@ -68,10 +70,14 @@
   position: absolute;
 }
 
-@include media_query("lg", "max") {
+@include media_query("md", "max") {
   .swiper-main-wrapper {
     margin-block-start: 0;
   }
-}
 
-@include media_query("");
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: static;
+    margin: 0 20px 20px !important;
+  }
+}

@@ -4961,6 +4961,7 @@
     },
     scrollbar: {
       el: ".swiper-scrollbar"
-    }
+    },
+    autoHeight: true
   });
 })();
