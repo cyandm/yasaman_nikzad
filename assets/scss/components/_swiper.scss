@@ -29,6 +29,10 @@
       border-radius: 12px;
     }
 
+    .swiper-pagination-bullet:hover {
+      cursor: pointer;
+    }
+
     .swiper-pagination-bullet-active-main {
       width: 64px !important;
       height: 8px;
@@ -78,6 +82,11 @@
     );
     z-index: 100;
   }
+}
+
+.swiper-button-next,
+.swiper-button-prev:hover {
+  cursor: pointer;
 }
 
 .icon-test-7,
