@@ -4,7 +4,7 @@
   height: 668px;
 
   .swiper-wrapper {
-    height: auto !important;
+    // height: auto !important;
   }
   .swiper-wrapper img {
     width: 100%;
@@ -34,7 +34,11 @@
       height: 8px;
       background: var(
         --secondary-main,
-        linear-gradient(107deg, #f25c05 -11.52%, #f21305 129.61%)
+        linear-gradient(
+          107deg,
+          var(--color-secondary-400) -11.52%,
+          var(--color-secondary) 129.61%
+        )
       );
     }
   }
@@ -46,7 +50,14 @@
     bottom: 0;
     margin: auto;
     right: 8px;
-    background-color: red;
+    background: var(
+      --secondary-main,
+      linear-gradient(
+        107deg,
+        var(--color-secondary-400) -11.52%,
+        var(--color-secondary) 129.61%
+      )
+    );
     z-index: 100;
   }
 
@@ -57,7 +68,14 @@
     bottom: 0;
     margin: auto;
     right: 8px;
-    background-color: red;
+    background: var(
+      --secondary-main,
+      linear-gradient(
+        107deg,
+        var(--color-secondary-400) -11.52%,
+        var(--color-secondary) 129.61%
+      )
+    );
     z-index: 100;
   }
 }

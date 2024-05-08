@@ -10,6 +10,7 @@ const singleServiceSwiper = new Swiper('#singleServiceSwiper', {
   pagination: {
     el: '.swiper-pagination',
     dynamicBullets: true,
+    clickable: true,
   },
 
 
