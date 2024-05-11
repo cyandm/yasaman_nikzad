@@ -6283,7 +6283,7 @@ h2,
 .fs-h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 42px;
 }
 
 h3,
@@ -6508,7 +6508,7 @@ caption,
   .fs-xxl-h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 42px;
   }
 }
 @media (max-width: 1200px) {
@@ -6516,7 +6516,7 @@ caption,
   .fs-xl-h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 42px;
   }
 }
 @media (max-width: 992px) {
@@ -6524,7 +6524,7 @@ caption,
   .fs-lg-h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 42px;
   }
 }
 @media (max-width: 768px) {
@@ -6532,7 +6532,7 @@ caption,
   .fs-md-h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 42px;
   }
 }
 @media (max-width: 576px) {
@@ -6540,7 +6540,7 @@ caption,
   .fs-sm-h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 42px;
   }
 }
 @media (max-width: 480px) {
@@ -6548,7 +6548,7 @@ caption,
   .fs-xs-h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 42px;
   }
 }
 @media (max-width: 320px) {
@@ -6556,7 +6556,7 @@ caption,
   .fs-xxs-h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 42px;
   }
 }
 @media (max-width: 1440px) {
@@ -7252,10 +7252,6 @@ caption,
   justify-content: center;
 }
 
-.jc-between {
-  justify-content: space-between;
-}
-
 .jc-evenly {
   justify-content: space-evenly;
 }
@@ -7487,6 +7483,55 @@ main.sample-page .shadow {
 }
 main.sample-page .shadow-sm {
   box-shadow: 0 0 0.25rem rgba(145, 145, 145, 0.15);
+}
+
+.comments-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+.comments-content .comment-list {
+  padding-block: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+.comments-content .comment-list :second-child {
+  margin-right: 0px;
+}
+.comments-content .reply {
+  color: var(--color-primary);
+  top: 0;
+  left: PxToRem(64);
+  rotate: 90deg;
+  font-size: PxToRem(24);
+  translate: 0 6px;
+}
+
+.comment {
+  border-bottom: unset;
+  width: 90%;
+  align-self: flex-end;
+}
+.comment .comment {
+  width: 80%;
+}
+
+.comment-author img {
+  width: PxToRem(60);
+  height: PxToRem(60);
+  border-radius: 50%;
+}
+.comment-author .says {
+  display: none;
+}
+
+#respond #reply-title small #cancel-comment-reply-link {
+  color: var(--color-primary);
+  margin-left: 8px;
 }
 
 /** Initial Buttons **/

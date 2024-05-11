@@ -19,16 +19,11 @@ global $wp_query;
     endwhile;
 else : ?>
 
-    <div>
-        'not post\'s found'
+    <div class="text-secondary-400 d-flex jc-center fs-h2">
+        Post's Not Found
     </div>
 <?php endif; ?>
 <div class="clr-fix-80"> </div>
-
-
-
-
-
 
 
 

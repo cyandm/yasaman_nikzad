@@ -50,7 +50,7 @@ $typo: (
   "title": make_font_list(156px, 600px, 189px),
   "title-sm": make_font_list(52px, 600px, 64px),
   "h1": make_font_list(2rem, 700),
-  "h2": make_font_list(1.5rem, 700),
+  "h2": make_font_list(1.5rem, 700, 42px),
   "h3": make_font_list(1.25rem, 700),
   "h4": make_font_list(1.1rem, 700),
   "h5": make_font_list(1rem, 700),
@@ -61,6 +61,8 @@ $typo: (
   "caption-sm": make_font_list(36px, 700, 44px),
   "caption-sm-1": make_font_list(28px, 500, 32px),
   "body-1": make_font_list(16px, 500, 28px),
+  "body-2": make_font_list(20px, 500, 40px),
+
 );
 
 /*Breakpoints*/
