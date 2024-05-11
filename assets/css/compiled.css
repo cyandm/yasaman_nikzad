@@ -7995,6 +7995,7 @@ nav.menu a {
 }
 
 .page-numbers {
+  color: #fff;
   display: flex;
   height: 50px;
   padding: 16px 20px;
