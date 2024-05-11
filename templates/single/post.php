@@ -23,7 +23,7 @@
 				<time datetime="2024-04-29T12:18:26+03:30" itemprop="datePublished">2024/04/29</time>
 				<!-- <time datetime="<?php //echo get_the_date('c'); 
 										?>" itemprop="datePublished"><?php //echo get_the_date(); 
-																									?></time> -->
+																		?></time> -->
 			</div>
 			<section class="single-post-content">
 				<?php the_content()

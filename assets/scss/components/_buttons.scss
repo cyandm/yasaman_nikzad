@@ -37,7 +37,7 @@
   $border-radius: $radius
 ) {
   color: $color;
-  background: $bg-color;
+  background-color: $bg-color;
   border: $br-width solid $br-color;
   padding-block: $padding-size * $button_padding_base_block;
   padding-inline: $padding-size * $button_padding_base_inline;
@@ -45,7 +45,7 @@
 
   &:hover {
     color: $h-color;
-    background: $h-bg-color;
+    background-color: $h-bg-color;
     border-color: $h-br-color;
   }
 
@@ -102,22 +102,9 @@ name of buttons that uses in project
 }
 
 #{btn-select('primary')} {
-  // @include btn(
-  //   $color: $color_primary_900,
-  //   $bg-color: $color_primary,
-  //   $br-color: $color_primary,
-  //   $h-color: $color_primary_100,
-  //   $h-bg-color: $color_primary_700,
-  //   $h-br-color: $color_primary_700
-  // );
   @include btn(
     $color: $color_secondary_100,
     $bg-color: $color_primary,
-    // linear-gradient(
-    //   107.24deg,
-    //   var(--color-secondary-400) -11.52%,
-    //   var(--color-secondary) 129.61%
-    // ),
     $br-color: $color_secondary,
     $h-color: $color_secondary_900,
     $h-bg-color: $color_secondary_300,
@@ -140,10 +127,4 @@ name of buttons that uses in project
     $h-br-color: $color_secondary_300
   );
 }
-// $h-br-color
-
-// #{btn-select('third')} {
-
-// }
-
 /** **/
