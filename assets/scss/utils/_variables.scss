@@ -61,6 +61,10 @@ $typo: (
   "body": make_font_list(1rem, 500, 1.75),
   "body-sm": make_font_list(1.2rem, 500),
   "caption": make_font_list(0.85rem, 500),
+  "caption-sm": make_font_list(36px, 700, 44px),
+  "caption-sm-1": make_font_list(28px, 500, 32px),
+  "body-1": make_font_list(16px, 500, 28px),
+  "body-2": make_font_list(20px, 500, 40px),
 );
 
 /*Breakpoints*/

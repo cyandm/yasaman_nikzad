@@ -7548,6 +7548,55 @@ main.sample-page .shadow-sm {
   box-shadow: 0 0 0.25rem rgba(145, 145, 145, 0.15);
 }
 
+.comments-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+.comments-content .comment-list {
+  padding-block: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+.comments-content .comment-list :second-child {
+  margin-right: 0px;
+}
+.comments-content .reply {
+  color: var(--color-primary);
+  top: 0;
+  left: PxToRem(64);
+  rotate: 90deg;
+  font-size: PxToRem(24);
+  translate: 0 6px;
+}
+
+.comment {
+  border-bottom: unset;
+  width: 90%;
+  align-self: flex-end;
+}
+.comment .comment {
+  width: 80%;
+}
+
+.comment-author img {
+  width: PxToRem(60);
+  height: PxToRem(60);
+  border-radius: 50%;
+}
+.comment-author .says {
+  display: none;
+}
+
+#respond #reply-title small #cancel-comment-reply-link {
+  color: var(--color-primary);
+  margin-left: 8px;
+}
+
 /** Initial Buttons **/
 [class*=btn-] {
   font-size: 1rem;
@@ -7613,26 +7662,26 @@ name of buttons that uses in project
 }
 
 .btn-primary {
-  color: var(--color-primary-900);
+  color: var(--color-secondary-100);
   background-color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-secondary);
   padding-block: 0.375rem;
   padding-inline: 0.75rem;
   border-radius: 1rem;
 }
 .btn-primary:hover {
-  color: var(--color-primary-100);
-  background-color: var(--color-primary-700);
-  border-color: var(--color-primary-700);
+  color: var(--color-secondary-900);
+  background-color: var(--color-secondary-300);
+  border-color: var(--color-secondary-300);
 }
 .btn-primary:focus {
-  color: var(--color-primary-900);
+  color: var(--color-secondary-100);
   background-color: var(--color-primary);
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 1px var(--color-primary);
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 1px var(--color-secondary);
 }
 .btn-primary:focus:active {
-  box-shadow: 0 0 0 2px var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-secondary);
 }
 
 .btn-secondary {
@@ -8322,6 +8371,45 @@ section.single-post-content blockquote p {
     align-items: center;
   }
 }
+.results-bg {
+  width: 100%;
+}
+
+@media screen and (max-width: 767.8px) {
+  .card-gap {
+    gap: 12px;
+  }
+}
+
+.not-found-image-wrapper {
+  z-index: -200;
+  position: relative;
+  transform: scale(1) translateY(5rem);
+}
+
+.error-404 {
+  transform: scale(1) translateY(-23rem);
+}
+@media screen and (min-width: 1200px) {
+  .error-404 {
+    transform: scale(1) translateY(-15rem);
+  }
+}
+@media screen and (max-width: 1199.8px) {
+  .error-404 {
+    transform: scale(1) translateY(-10rem);
+  }
+}
+
+.go-home-btn {
+  padding: 16px;
+}
+@media screen and (max-width: 479.8px) {
+  .go-home-btn {
+    width: 100%;
+  }
+}
+
 @font-face {
   font-family: "iconsax";
   src: url("../fonts/icons/iconsax/iconsax.eot");
