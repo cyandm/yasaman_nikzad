@@ -1,0 +1,11 @@
+@use "../utils" as *;
+
+// .get-in-touch {
+//   display: none;
+// }
+.main {
+  overflow: hidden;
+}
+.form-element {
+  box-shadow: $shadow_info;
+}
