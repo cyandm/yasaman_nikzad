@@ -52,8 +52,8 @@ function cyn_register_acf_frontpage_settings()
 			cyn_acf_add_image('intro-img', 'Intro Image'),
 			cyn_acf_add_text('intro-name', 'Intro Name'),
 			cyn_acf_add_text('intro-job', 'Intro Job'),
-		]), 
-		cyn_acf_add_tab('test')
+		]),
+		cyn_acf_add_tab('test'),
 		cyn_acf_add_text('test', 'test')
 
 
