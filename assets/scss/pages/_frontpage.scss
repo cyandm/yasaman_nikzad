@@ -1,0 +1,13 @@
+@use "../utils/" as *;
+
+.home-page-hero-sidebar {
+  z-index: 100;
+  width: 365px;
+  left: 0;
+  max-height: 115vh;
+  background: var(--primery, rgba(247, 247, 247, 0.08));
+}
+
+.sidebar-social-icons {
+  width: 34px;
+}

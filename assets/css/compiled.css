@@ -3497,10 +3497,10 @@ body {
   --content-max-width: 1440px;
   --breakout-max-width: 1600px;
   --breakout-size: calc(
-  	(var(--breakout-max-width) - var(--content-max-width)) / 2
+    (var(--breakout-max-width) - var(--content-max-width)) / 2
   );
   --paragraph-size: calc(
-  	(var(--content-max-width) - var(--paragraph-max-width)) / 2
+    (var(--content-max-width) - var(--paragraph-max-width)) / 2
   );
   display: grid;
   grid-template-columns: [full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] minmax(0, var(--paragraph-size)) [paragraph-start] min(100% - var(--padding-inline) * 2, var(--paragraph-max-width)) [paragraph-end] minmax(0, var(--paragraph-size)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr) [full-width-end];
@@ -8408,6 +8408,18 @@ section.single-post-content blockquote p {
   .go-home-btn {
     width: 100%;
   }
+}
+
+.home-page-hero-sidebar {
+  z-index: 100;
+  width: 365px;
+  left: 0;
+  max-height: 115vh;
+  background: var(--primery, rgba(247, 247, 247, 0.08));
+}
+
+.sidebar-social-icons {
+  width: 34px;
 }
 
 @font-face {
