@@ -8310,6 +8310,9 @@ main.contact-us {
   }
 }
 
+.send-contact-us {
+  background: linear-gradient(107.24deg, #f25c05 -11.52%, #f21305 129.61%);
+}
 @media screen and (max-width: 479.8px) {
   .send-contact-us {
     width: 100%;
@@ -8414,12 +8417,34 @@ section.single-post-content blockquote p {
   }
 }
 
+.get-in-touch {
+  z-index: 100;
+}
+
+.get-in-touch-form {
+  bottom: 56px;
+}
+@media screen and (max-width: 991.8px) {
+  .get-in-touch-form {
+    bottom: 24px;
+  }
+}
+
 .main {
   overflow: hidden;
 }
 
 .form-element {
   box-shadow: 0 0.5rem 0.6rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.button {
+  background: linear-gradient(107.24deg, #f25c05 -11.52%, #f21305 129.61%);
+}
+@media screen and (max-width: 479.8px) {
+  .button {
+    width: 100%;
+  }
 }
 
 @font-face {

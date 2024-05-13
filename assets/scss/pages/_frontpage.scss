@@ -1,11 +1,24 @@
 @use "../utils" as *;
 
-// .get-in-touch {
-//   display: none;
-// }
+// Get In Touch section
+.get-in-touch {
+  z-index: 100;
+}
+.get-in-touch-form {
+  bottom: 56px;
+  @include media_query("lg") {
+    bottom: 24px;
+  }
+}
 .main {
   overflow: hidden;
 }
 .form-element {
   box-shadow: $shadow_info;
+}
+.button {
+  background: linear-gradient(107.24deg, #f25c05 -11.52%, #f21305 129.61%);
+  @include media_query("xs") {
+    width: 100%;
+  }
 }
