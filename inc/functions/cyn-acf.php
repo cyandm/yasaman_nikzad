@@ -53,10 +53,30 @@ function cyn_register_acf_frontpage_settings()
 			cyn_acf_add_text('intro-name', 'Intro Name'),
 			cyn_acf_add_text('intro-job', 'Intro Job'),
 		]),
-		cyn_acf_add_tab('test'),
+		cyn_acf_add_tab('Swiper'),
+		cyn_acf_add_group('swiper-info', 'Swiper Info', [
+			cyn_acf_add_text('swiper-txt-1', 'Swiper Text 1'),
+			cyn_acf_add_text('swiper-txt-2', 'Swiper Text 2'),
+			cyn_acf_add_link('swiper-btn', 'Swiper Button')
+		])
+
 
 
 	];
+
+	//Homepage Page Slideshow
+	$slideshow_imgs = [];
+
+	for ($i = 1; $i <= 3; $i++) {
+
+		$slideshow_img = cyn_acf_add_image("image_$i", __("Image $i", "cyn-dm"));
+
+
+		array_push($slideshow_imgs, $slideshow_img);
+	}
+
+	$fields = array_merge($fields, $slideshow_imgs);
+	//End of Homepage Slideshow
 
 	$location = [
 		[

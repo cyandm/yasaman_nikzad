@@ -1,13 +1,43 @@
 @use "../utils/" as *;
 
-.home-page-hero-sidebar {
-  z-index: 100;
-  width: 365px;
-  left: 0;
-  max-height: 115vh;
-  background: var(--primery, rgba(247, 247, 247, 0.08));
-}
+.home-page-hero {
+  .home-page-hero-sidebar {
+    z-index: 100;
+    width: 365px;
+    left: 0;
+    max-height: 115vh;
+    background: var(--primery, rgba(247, 247, 247, 0.08));
 
-.sidebar-social-icons {
-  width: 34px;
+    .sidebar-social-icons-wrapper {
+      .sidebar-social-icons {
+        width: 34px;
+      }
+    }
+  }
+
+  .home-page-hero-swiper {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+
+    .swiper-pagination-bullet-active-main {
+      width: 276px !important;
+    }
+  }
+
+  .swiper-info {
+    z-index: 100;
+    top: 514px;
+    left: 505px;
+    .swiper-info-btn {
+      .info-btn {
+        background: linear-gradient(
+          107deg,
+          var(--color-secondary) -11.52%,
+          var(--color-secondary-400) 129.61%
+        );
+      }
+    }
+  }
 }

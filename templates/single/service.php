@@ -43,6 +43,12 @@ $time_line_items = [
 
     <?php cyn_get_component('swiper') ?>
 
+    <div class="swiper-info-wrapper fs-body text-natural-100">
+
+        <?php echo get_field('swiper-info') ?>
+
+    </div>
+
     <div class="clr-fix-64"></div>
 
     <?php cyn_get_component('feature') ?>
