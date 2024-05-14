@@ -8143,7 +8143,7 @@ nav.menu a {
 .swiper .swiper-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 .swiper .swiper-pagination {
   width: 100% !important;
@@ -8499,7 +8499,7 @@ section.single-post-content blockquote p {
   display: none;
 }
 .home-page-hero .swiper-info {
-  margin: 36vh 0 0 16vw;
+  margin: 36vh 0 0 0;
   z-index: 100;
 }
 .home-page-hero .swiper-info .swiper-info-btn .info-btn {
