@@ -6257,21 +6257,28 @@ body {
 title,
 .fs-title {
   font-size: 156px;
-  font-weight: 600px;
+  font-weight: 600;
   line-height: 189px;
 }
 
 title-1,
 .fs-title-1 {
   font-size: 76px;
-  font-weight: 600px;
+  font-weight: 600;
+  line-height: 88px;
+}
+
+title-2,
+.fs-title-2 {
+  font-size: 48px;
+  font-weight: 600;
   line-height: 88px;
 }
 
 title-sm,
 .fs-title-sm {
   font-size: 52px;
-  font-weight: 600px;
+  font-weight: 600;
   line-height: 64px;
 }
 
@@ -6342,7 +6349,7 @@ caption,
   title,
   .fs-xxl-title {
     font-size: 156px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 189px;
   }
 }
@@ -6350,7 +6357,7 @@ caption,
   title,
   .fs-xl-title {
     font-size: 156px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 189px;
   }
 }
@@ -6358,7 +6365,7 @@ caption,
   title,
   .fs-lg-title {
     font-size: 156px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 189px;
   }
 }
@@ -6366,7 +6373,7 @@ caption,
   title,
   .fs-md-title {
     font-size: 156px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 189px;
   }
 }
@@ -6374,7 +6381,7 @@ caption,
   title,
   .fs-sm-title {
     font-size: 156px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 189px;
   }
 }
@@ -6382,7 +6389,7 @@ caption,
   title,
   .fs-xs-title {
     font-size: 156px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 189px;
   }
 }
@@ -6390,7 +6397,7 @@ caption,
   title,
   .fs-xxs-title {
     font-size: 156px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 189px;
   }
 }
@@ -6398,7 +6405,7 @@ caption,
   title-1,
   .fs-xxl-title-1 {
     font-size: 76px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 88px;
   }
 }
@@ -6406,7 +6413,7 @@ caption,
   title-1,
   .fs-xl-title-1 {
     font-size: 76px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 88px;
   }
 }
@@ -6414,7 +6421,7 @@ caption,
   title-1,
   .fs-lg-title-1 {
     font-size: 76px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 88px;
   }
 }
@@ -6422,7 +6429,7 @@ caption,
   title-1,
   .fs-md-title-1 {
     font-size: 76px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 88px;
   }
 }
@@ -6430,7 +6437,7 @@ caption,
   title-1,
   .fs-sm-title-1 {
     font-size: 76px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 88px;
   }
 }
@@ -6438,7 +6445,7 @@ caption,
   title-1,
   .fs-xs-title-1 {
     font-size: 76px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 88px;
   }
 }
@@ -6446,7 +6453,63 @@ caption,
   title-1,
   .fs-xxs-title-1 {
     font-size: 76px;
-    font-weight: 600px;
+    font-weight: 600;
+    line-height: 88px;
+  }
+}
+@media (max-width: 1440px) {
+  title-2,
+  .fs-xxl-title-2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 88px;
+  }
+}
+@media (max-width: 1200px) {
+  title-2,
+  .fs-xl-title-2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 88px;
+  }
+}
+@media (max-width: 992px) {
+  title-2,
+  .fs-lg-title-2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 88px;
+  }
+}
+@media (max-width: 768px) {
+  title-2,
+  .fs-md-title-2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 88px;
+  }
+}
+@media (max-width: 576px) {
+  title-2,
+  .fs-sm-title-2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 88px;
+  }
+}
+@media (max-width: 480px) {
+  title-2,
+  .fs-xs-title-2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 88px;
+  }
+}
+@media (max-width: 320px) {
+  title-2,
+  .fs-xxs-title-2 {
+    font-size: 48px;
+    font-weight: 600;
     line-height: 88px;
   }
 }
@@ -6454,7 +6517,7 @@ caption,
   title-sm,
   .fs-xxl-title-sm {
     font-size: 52px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 64px;
   }
 }
@@ -6462,7 +6525,7 @@ caption,
   title-sm,
   .fs-xl-title-sm {
     font-size: 52px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 64px;
   }
 }
@@ -6470,7 +6533,7 @@ caption,
   title-sm,
   .fs-lg-title-sm {
     font-size: 52px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 64px;
   }
 }
@@ -6478,7 +6541,7 @@ caption,
   title-sm,
   .fs-md-title-sm {
     font-size: 52px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 64px;
   }
 }
@@ -6486,7 +6549,7 @@ caption,
   title-sm,
   .fs-sm-title-sm {
     font-size: 52px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 64px;
   }
 }
@@ -6494,7 +6557,7 @@ caption,
   title-sm,
   .fs-xs-title-sm {
     font-size: 52px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 64px;
   }
 }
@@ -6502,7 +6565,7 @@ caption,
   title-sm,
   .fs-xxs-title-sm {
     font-size: 52px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 64px;
   }
 }
@@ -8416,21 +8479,28 @@ section.single-post-content blockquote p {
   left: 0;
   max-height: 115vh;
   background: var(--primery, rgba(247, 247, 247, 0.08));
+  border: 1px solid var(--color-primery, rgba(255, 255, 255, 0.6));
+  backdrop-filter: blur(12px);
 }
 .home-page-hero .home-page-hero-sidebar .sidebar-social-icons-wrapper .sidebar-social-icons {
   width: 34px;
+}
+.home-page-hero .home-page-hero-swiper .swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 132px !important;
+}
+.home-page-hero .home-page-hero-swiper .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  width: 276px !important;
+}
+.home-page-hero .home-page-hero-swiper .swiper-wrapper {
+  height: 96vh;
 }
 .home-page-hero .home-page-hero-swiper .swiper-button-prev,
 .home-page-hero .home-page-hero-swiper .swiper-button-next {
   display: none;
 }
-.home-page-hero .home-page-hero-swiper .swiper-pagination-bullet-active-main {
-  width: 276px !important;
-}
 .home-page-hero .swiper-info {
+  margin: 36vh 0 0 16vw;
   z-index: 100;
-  top: 514px;
-  left: 505px;
 }
 .home-page-hero .swiper-info .swiper-info-btn .info-btn {
   background: linear-gradient(107deg, var(--color-secondary) -11.52%, var(--color-secondary-400) 129.61%);

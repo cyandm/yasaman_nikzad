@@ -8,7 +8,7 @@
 
 <main class="full-width">
 
-    <div class="home-page-hero full-width">
+    <div class="home-page-hero | full-width">
 
 
         <!-- <div class="home-page-hero-menu-icon d-none d-md-block" id="mobileMenuOpener">
@@ -18,7 +18,7 @@
         </div> -->
 
 
-        <div class="home-page-hero-sidebar d-flex f-column pos-fixed pb-40 pi-20 gap-40">
+        <div class="home-page-hero-sidebar | d-flex f-column pos-fixed pb-40 pi-20 gap-40">
 
             <div class="sidebar-intro-wrapper | d-flex f-column ai-center gap-16">
 
@@ -28,15 +28,15 @@
 
                 </div>
 
-                <div class="intro-txt-wrapper text-center">
+                <div class="intro-txt-wrapper | text-center">
 
-                    <div class="intro-name-txt text-natural-100">
+                    <div class="intro-name-txt | text-natural-100">
 
                         <?php echo $intro["intro-name"] ?>
 
                     </div>
 
-                    <div class="intro-job-txt text-natural-100">
+                    <div class="intro-job-txt | text-natural-100">
 
                         <?php echo $intro["intro-job"] ?>
 
@@ -67,31 +67,31 @@
 
             <hr>
 
-            <div class="sidebar-social-icons-wrapper d-flex jc-center gap-12 ">
-                <img class="sidebar-social-icons bg-natural-900 radius-8 p-8"
+            <div class="sidebar-social-icons-wrapper | d-flex jc-center gap-12 ">
+                <img class="sidebar-social-icons | bg-natural-900 radius-8 p-8"
                     src="<?php echo get_template_directory_uri() . '/assets/img/icon-test-2-white.png' ?>"
                     alt="test-icon">
-                <img class="sidebar-social-icons bg-natural-900 radius-8 p-8"
+                <img class="sidebar-social-icons | bg-natural-900 radius-8 p-8"
                     src="<?php echo get_template_directory_uri() . '/assets/img/icon-test-3-white.png' ?>"
                     alt="test-icon">
-                <img class="sidebar-social-icons bg-natural-900 radius-8 p-8"
+                <img class="sidebar-social-icons | bg-natural-900 radius-8 p-8"
                     src="<?php echo get_template_directory_uri() . '/assets/img/icon-test-4-white.png' ?>"
                     alt="test-icon">
             </div>
 
         </div>
 
-        <div class="home-page-hero-swiper">
+        <div class="home-page-hero-swiper | d-flex f-column jc-start ai-center">
 
-            <div class="swiper-info d-flex ai-center f-column gap-32 pos-absolute">
+            <div class="swiper-info | d-flex ai-center f-column gap-32 pos-absolute">
 
-                <div class="swiper-info-txt-wrapper d-flex f-column gap-16">
+                <div class="swiper-info-txt-wrapper | d-flex ai-center f-column gap-16">
 
-                    <div class="swiper-info-txt text-natural-100 fs-title-1">
+                    <div class="swiper-info-txt | text-natural-100 fs-title-1">
                         <?php echo $swiper_info["swiper-txt-1"] ?>
                     </div>
 
-                    <div class="swiper-info-txt text-natural-100 ">
+                    <div class="swiper-info-txt | text-natural-100 fs-title-2">
                         <?php echo $swiper_info["swiper-txt-2"] ?>
                     </div>
 
@@ -110,7 +110,7 @@
                     ?>
 
 
-                    <a class="info-btn pi-20 pb-16 radius-12 text-natural-100 fs-caption-sm-1"
+                    <a class="info-btn | pi-20 pb-16 radius-12 text-natural-100 fs-caption-sm-1"
                         href="<?php echo esc_url($info_btn_url); ?>"><?php echo esc_html($info_btn_title); ?></a>
 
                 </div>
