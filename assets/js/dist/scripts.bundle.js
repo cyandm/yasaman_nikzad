@@ -4962,7 +4962,7 @@
     },
     scrollbar: {
       el: ".swiper-scrollbar"
-    },
-    autoHeight: true
+    }
+    // autoHeight: true,
   });
 })();

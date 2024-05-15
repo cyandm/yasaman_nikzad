@@ -23,5 +23,5 @@ const singleServiceSwiper = new Swiper('#singleServiceSwiper', {
     el: '.swiper-scrollbar',
   },
 
-  autoHeight: true,
+  // autoHeight: true,
 });

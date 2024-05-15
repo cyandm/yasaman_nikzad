@@ -24,7 +24,6 @@ function cyn_register_acf_company_settings()
 		cyn_acf_add_options('verified_type', 'Verified Type', ['star-supplier', 'supplier']),
 		cyn_acf_add_url('website', 'website'),
 		cyn_acf_add_color('color', 'Color'),
-		cyn_acf_add_wysiwyg('wysiwyg-test', 'wysiwyg test')
 
 	];
 
@@ -48,37 +47,60 @@ function cyn_register_acf_frontpage_settings()
 {
 	$fields = [
 
+
+
 		cyn_acf_add_tab('intro'),
-		cyn_acf_add_group('intro', 'Intro', [
+		cyn_acf_add_group('intro', __("Intro", "cyn-dm"), [
 			cyn_acf_add_image('intro-img', 'Intro Image'),
 			cyn_acf_add_text('intro-name', 'Intro Name'),
 			cyn_acf_add_text('intro-job', 'Intro Job'),
 		]),
-		cyn_acf_add_tab('Swiper'),
+		cyn_acf_add_tab('Swiper Info'),
 		cyn_acf_add_group('swiper-info', 'Swiper Info', [
 			cyn_acf_add_text('swiper-txt-1', 'Swiper Text 1'),
 			cyn_acf_add_text('swiper-txt-2', 'Swiper Text 2'),
 			cyn_acf_add_link('swiper-btn', 'Swiper Button')
 		]),
-		cyn_acf_add_tab('test'),
-
-
-
 	];
 
 	//Homepage Page Slideshow
+
 	$slideshow_imgs = [];
 
 	for ($i = 1; $i <= 3; $i++) {
-
 		$slideshow_img = cyn_acf_add_image("image_$i", __("Image $i", "cyn-dm"));
 
 
 		array_push($slideshow_imgs, $slideshow_img);
-	}
+	};
 
+	array_push($fields, cyn_acf_add_tab('Images'));
 	$fields = array_merge($fields, $slideshow_imgs);
 	//End of Homepage Slideshow
+
+
+	//HomePage city statistics
+
+	$landmarks_percent = [];
+
+
+	for ($i = 1; $i <= 6; $i++) {
+
+		$landmark_percent =
+
+			cyn_acf_add_group("landmark-statistics_$i", "Landmark Statistics $i", [
+				cyn_acf_add_text("landmark-name_$i", "Landmark Name $i"),
+				cyn_acf_add_number("landmark-percent_$i", "Landmark Percent $i"),
+			]);
+
+		array_push($landmarks_percent, $landmark_percent);
+	}
+
+	array_push($fields, cyn_acf_add_tab('Landmarks'));
+	$fields = array_merge($fields, $landmarks_percent);
+
+	//End of HomePage city statistics
+
 
 	$location = [
 		[

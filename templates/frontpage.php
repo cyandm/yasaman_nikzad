@@ -39,8 +39,7 @@
                     ?>
 
 
-                    <a class="info-btn | pi-20 pb-16 radius-12 text-natural-100 fs-caption-sm-1"
-                        href="<?php echo esc_url($info_btn_url); ?>"><?php echo esc_html($info_btn_title); ?></a>
+                    <a class="info-btn | pi-20 pb-16 radius-12 text-natural-100 fs-caption-sm-1" href="<?php echo esc_url($info_btn_url); ?>"><?php echo esc_html($info_btn_title); ?></a>
 
                 </div>
             </div>
@@ -58,7 +57,17 @@
         </div>
     </div>
 
+
+    <section class="main-content ">
+
+    </section>
+
 </main>
+
+<!-- <div class="custom-div" style="--mehdi:"></div> -->
+
+
+
 
 
 
