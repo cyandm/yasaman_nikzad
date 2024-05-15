@@ -24,6 +24,7 @@ function cyn_register_acf_company_settings()
 		cyn_acf_add_options('verified_type', 'Verified Type', ['star-supplier', 'supplier']),
 		cyn_acf_add_url('website', 'website'),
 		cyn_acf_add_color('color', 'Color'),
+		cyn_acf_add_wysiwyg('wysiwyg-test', 'wysiwyg test')
 
 	];
 
@@ -58,7 +59,8 @@ function cyn_register_acf_frontpage_settings()
 			cyn_acf_add_text('swiper-txt-1', 'Swiper Text 1'),
 			cyn_acf_add_text('swiper-txt-2', 'Swiper Text 2'),
 			cyn_acf_add_link('swiper-btn', 'Swiper Button')
-		])
+		]),
+		cyn_acf_add_tab('test'),
 
 
 
