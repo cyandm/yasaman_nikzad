@@ -26,6 +26,7 @@ $colors_base: (
 
 :root {
   --color-secondary-400: #f25c05 !important;
+  
 }
 
 /*Border Radius*/
@@ -48,12 +49,12 @@ for ex:
 make_font_list(font-size , font-weight , line-height);
 */
 $typo: (
-  "title": make_font_list(156px, 600px, 189px),
-  "title-sm": make_font_list(52px, 600px, 64px),
-  "title-1": make_font_list(76px, 600px, 88px),
-  "title-2": make_font_list(48px, 600px, 88px),
-  "h1": make_font_list(2rem, 700),
-  "h2": make_font_list(1.5rem, 700),
+  "title": make_font_list(156px, 600, 189px),
+  "title-sm": make_font_list(52px, 600, 64px),
+  "title-1": make_font_list(76px, 600, 88px),
+  "title-2": make_font_list(48px, 600, 88px),
+  "h1": make_font_list(36px, 600, 44px),
+  "h2": make_font_list(32px, 600, 32px),
   "h3": make_font_list(1.25rem, 700),
   "h4": make_font_list(1.1rem, 700),
   "h5": make_font_list(1rem, 700),

@@ -1,24 +1,84 @@
 @use "../utils" as *;
-
-// Get In Touch section
-.get-in-touch {
+//all
+.main {
+  overflow: hidden;
+}
+.content-title {
   z-index: 100;
 }
-.get-in-touch-form {
+.content {
   bottom: 56px;
   @include media_query("lg") {
     bottom: 24px;
   }
-}
-.main {
-  overflow: hidden;
-}
-.form-element {
-  box-shadow: $shadow_info;
 }
 .button {
   background: linear-gradient(107.24deg, #f25c05 -11.52%, #f21305 129.61%);
   @include media_query("xs") {
     width: 100%;
   }
+}
+
+// Residency
+.residency-image {
+  &-wrapper {
+    z-index: -1;
+  }
+}
+.dubai-residency {
+  @include media_query("lg", "min") {
+    margin-top: -48px;
+  }
+  @include media_query("lg") {
+    margin-top: -15px;
+  }
+}
+.residency-steps {
+  @include media_query(" md") {
+    width: 100%;
+  }
+  @include media_query(" sm") {
+    width: 100%;
+  }
+  counter-reset: section;
+  > div {
+    counter-increment: count;
+    &::before {
+      content: counter(count);
+      color: #f25c05;
+      @include media_query("lg", "min") {
+        font-size: 156px;
+        font-weight: 600;
+        line-height: 188px;
+        transform: translate(0px, -30px);
+      }
+      @include media_query("lg", "max") {
+        font-size: 44px;
+        font-weight: 600;
+        line-height: 52px;
+        transform: translate(-24px, 60px);
+      }
+    }
+  }
+
+  @include media_query("lg", "min") {
+    margin-top: -800px;
+  }
+  @include media_query("lg") {
+    margin-top: -700px;
+    width: 100%;
+  }
+}
+.residency-step {
+  @include media_query("lg", "min") {
+    &:nth-child(2) {
+      justify-content: flex-end;
+    }
+  }
+}
+// Blogs
+
+// Get In Touch section
+.form-element {
+  box-shadow: $shadow_info;
 }

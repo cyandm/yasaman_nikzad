@@ -3,6 +3,9 @@
 main.contact-us {
   overflow: hidden;
 }
+.form-element {
+  box-shadow: $shadow_info;
+}
 .contact-us-image {
   &-wrapper {
     transform: scale(1.5) translateY(3rem);
@@ -33,7 +36,4 @@ main.contact-us {
   @include media_query("xs") {
     width: 100%;
   }
-}
-.form-element {
-  box-shadow: $shadow_info;
 }

@@ -5,7 +5,7 @@
 <?php $intro = get_field("intro"); ?>
 
 <main class="main">
-    <!-- 
+    <!--     
     <div class="home-page-hero-wrapper">
 
         <div class="home-page-hero-menu-icon d-none d-md-block" id="mobileMenuOpener">
@@ -94,29 +94,70 @@
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
  -->
 
+
+
+
+
+
+
+    <div class="clr-fix-120"></div>
+    <!-- Residency -->
     <section>
+        <div class="text-center">
+            <p class="content-title | fs-title text-primary fs-lg-title-sm ">Residency</p>
+            <p class="dubai-residency | fs-h1 text-primary-100">3 Easy Steps To Dubai Residency</p>
+        </div>
+        <div class="clr-fix-44 d-none d-md-block"></div>
+        <div>
+            <div class="residency-image-wrapper | pos-relative">
+                <img class="residency-image" src="<?php echo get_stylesheet_directory_uri() . "/assets/img/footprint-trail.png" ?>" alt="footprint">
+            </div>
 
+            <div class="residency-steps | d-flex f-column">
+                <div class="residency-step | d-flex f-row mi-20">
+                    <div class="text-primary-100">
+                        <h1>Get Advice</h1>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, send Do Elusmod Tempor Incididunt.</p>
+                    </div>
+                </div>
+
+                <div class="residency-step | d-flex f-row mi-20">
+                    <div class="text-primary-100">
+                        <h1>Buying Property</h1>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, send Do Elusmod Tempor Incididunt.</p>
+                    </div>
+                </div>
+
+                <div class="residency-step | d-flex f-row mi-20">
+                    <div class="text-primary-100">
+                        <h1>Dubai Residency</h1>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, send Do Elusmod Tempor Incididunt.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="d-flex f-row-reverse m-bs-">
+            <button class="button btn-secondary" typ e="submit">
+                <span>Call Now</span><img src="<?php echo get_stylesheet_directory_uri() . "/assets/img/Search.png" ?>" alt="call now">
+            </button>
+        </div>
     </section>
-
-
-
-
-    <section class="get-in-touch-section"> <!-- get in touch -->
+    <div class="clr-fix-120"></div>
+    <!-- blogs -->
+    <section>
+        <?php cyn_get_component('home/blog') ?>
+        <?php cyn_get_component('swiper') ?>
+    </section>
+    <div class="clr-fix-120"></div>
+    <!-- get in touch -->
+    <section>
         <div>
             <div>
-                <p class="text-center fs-title text-primary fs-lg-title-sm pos-relative get-in-touch">Get In Touch</p>
-                <form class="d-grid gap-24  pos-relative get-in-touch-form" method="post" name="contact">
+                <p class="text-center fs-title text-primary fs-lg-title-sm pos-relative content-title">Get In Touch</p>
+                <form class="d-grid gap-24  pos-relative content" method="post" name="contact">
                     <div class="d-flex gap-24">
                         <div class="radius-16 bg-primary flex-1 form-element">
                             <input class="p-20" type="text" placeholder="Your Name" required="required">
@@ -132,14 +173,13 @@
                 <div class="clr-fix-24"></div>
                 <div class="d-flex f-row-reverse">
                     <button class="button btn-secondary" type="submit">
-                        <span>Send Message</span><img src="<?php echo get_stylesheet_directory_uri()
-                                                                . "/assets/img/Search.png" ?>" alt="submit-picture-contact">
+                        <span>Send Message</span><img src="<?php echo get_stylesheet_directory_uri() . "/assets/img/Search.png" ?>" alt="submit-picture-contact">
                     </button>
                 </div>
             </div>
         </div>
-
     </section>
+    <div class="clr-fix-92"></div>
 
 
 

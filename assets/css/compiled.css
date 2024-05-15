@@ -6257,36 +6257,36 @@ body {
 title,
 .fs-title {
   font-size: 156px;
-  font-weight: 600px;
+  font-weight: 600;
   line-height: 189px;
 }
 
 title-1,
 .fs-title-1 {
   font-size: 76px;
-  font-weight: 600px;
+  font-weight: 600;
   line-height: 88px;
 }
 
 title-sm,
 .fs-title-sm {
   font-size: 52px;
-  font-weight: 600px;
+  font-weight: 600;
   line-height: 64px;
 }
 
 h1,
 .fs-h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.5;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
 }
 
 h2,
 .fs-h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.5;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
 }
 
 h3,
@@ -6342,7 +6342,7 @@ caption,
   title,
   .fs-xxl-title {
     font-size: 156px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 189px;
   }
 }
@@ -6350,7 +6350,7 @@ caption,
   title,
   .fs-xl-title {
     font-size: 156px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 189px;
   }
 }
@@ -6358,7 +6358,7 @@ caption,
   title,
   .fs-lg-title {
     font-size: 156px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 189px;
   }
 }
@@ -6366,7 +6366,7 @@ caption,
   title,
   .fs-md-title {
     font-size: 156px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 189px;
   }
 }
@@ -6374,7 +6374,7 @@ caption,
   title,
   .fs-sm-title {
     font-size: 156px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 189px;
   }
 }
@@ -6382,7 +6382,7 @@ caption,
   title,
   .fs-xs-title {
     font-size: 156px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 189px;
   }
 }
@@ -6390,7 +6390,7 @@ caption,
   title,
   .fs-xxs-title {
     font-size: 156px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 189px;
   }
 }
@@ -6398,7 +6398,7 @@ caption,
   title-1,
   .fs-xxl-title-1 {
     font-size: 76px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 88px;
   }
 }
@@ -6406,7 +6406,7 @@ caption,
   title-1,
   .fs-xl-title-1 {
     font-size: 76px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 88px;
   }
 }
@@ -6414,7 +6414,7 @@ caption,
   title-1,
   .fs-lg-title-1 {
     font-size: 76px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 88px;
   }
 }
@@ -6422,7 +6422,7 @@ caption,
   title-1,
   .fs-md-title-1 {
     font-size: 76px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 88px;
   }
 }
@@ -6430,7 +6430,7 @@ caption,
   title-1,
   .fs-sm-title-1 {
     font-size: 76px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 88px;
   }
 }
@@ -6438,7 +6438,7 @@ caption,
   title-1,
   .fs-xs-title-1 {
     font-size: 76px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 88px;
   }
 }
@@ -6446,7 +6446,7 @@ caption,
   title-1,
   .fs-xxs-title-1 {
     font-size: 76px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 88px;
   }
 }
@@ -6454,7 +6454,7 @@ caption,
   title-sm,
   .fs-xxl-title-sm {
     font-size: 52px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 64px;
   }
 }
@@ -6462,7 +6462,7 @@ caption,
   title-sm,
   .fs-xl-title-sm {
     font-size: 52px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 64px;
   }
 }
@@ -6470,7 +6470,7 @@ caption,
   title-sm,
   .fs-lg-title-sm {
     font-size: 52px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 64px;
   }
 }
@@ -6478,7 +6478,7 @@ caption,
   title-sm,
   .fs-md-title-sm {
     font-size: 52px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 64px;
   }
 }
@@ -6486,7 +6486,7 @@ caption,
   title-sm,
   .fs-sm-title-sm {
     font-size: 52px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 64px;
   }
 }
@@ -6494,7 +6494,7 @@ caption,
   title-sm,
   .fs-xs-title-sm {
     font-size: 52px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 64px;
   }
 }
@@ -6502,120 +6502,120 @@ caption,
   title-sm,
   .fs-xxs-title-sm {
     font-size: 52px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 64px;
   }
 }
 @media (max-width: 1440px) {
   h1,
   .fs-xxl-h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
   }
 }
 @media (max-width: 1200px) {
   h1,
   .fs-xl-h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
   }
 }
 @media (max-width: 992px) {
   h1,
   .fs-lg-h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
   }
 }
 @media (max-width: 768px) {
   h1,
   .fs-md-h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
   }
 }
 @media (max-width: 576px) {
   h1,
   .fs-sm-h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
   }
 }
 @media (max-width: 480px) {
   h1,
   .fs-xs-h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
   }
 }
 @media (max-width: 320px) {
   h1,
   .fs-xxs-h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
   }
 }
 @media (max-width: 1440px) {
   h2,
   .fs-xxl-h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
   }
 }
 @media (max-width: 1200px) {
   h2,
   .fs-xl-h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
   }
 }
 @media (max-width: 992px) {
   h2,
   .fs-lg-h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
   }
 }
 @media (max-width: 768px) {
   h2,
   .fs-md-h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
   }
 }
 @media (max-width: 576px) {
   h2,
   .fs-sm-h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
   }
 }
 @media (max-width: 480px) {
   h2,
   .fs-xs-h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
   }
 }
 @media (max-width: 320px) {
   h2,
   .fs-xxs-h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
   }
 }
 @media (max-width: 1440px) {
@@ -8286,6 +8286,10 @@ main.contact-us {
   overflow: hidden;
 }
 
+.form-element {
+  box-shadow: 0 0.5rem 0.6rem 0 rgba(0, 0, 0, 0.25);
+}
+
 .contact-us-image-wrapper {
   transform: scale(1.5) translateY(3rem);
   position: relative;
@@ -8317,10 +8321,6 @@ main.contact-us {
   .send-contact-us {
     width: 100%;
   }
-}
-
-.form-element {
-  box-shadow: 0 0.5rem 0.6rem 0 rgba(0, 0, 0, 0.25);
 }
 
 section.single-post-content img {
@@ -8417,25 +8417,21 @@ section.single-post-content blockquote p {
   }
 }
 
-.get-in-touch {
-  z-index: 100;
-}
-
-.get-in-touch-form {
-  bottom: 56px;
-}
-@media screen and (max-width: 991.8px) {
-  .get-in-touch-form {
-    bottom: 24px;
-  }
-}
-
 .main {
   overflow: hidden;
 }
 
-.form-element {
-  box-shadow: 0 0.5rem 0.6rem 0 rgba(0, 0, 0, 0.25);
+.content-title {
+  z-index: 100;
+}
+
+.content {
+  bottom: 56px;
+}
+@media screen and (max-width: 991.8px) {
+  .content {
+    bottom: 24px;
+  }
 }
 
 .button {
@@ -8445,6 +8441,79 @@ section.single-post-content blockquote p {
   .button {
     width: 100%;
   }
+}
+
+.residency-image-wrapper {
+  z-index: -1;
+}
+
+@media screen and (min-width: 992px) {
+  .dubai-residency {
+    margin-top: -48px;
+  }
+}
+@media screen and (max-width: 991.8px) {
+  .dubai-residency {
+    margin-top: -15px;
+  }
+}
+
+.residency-steps {
+  counter-reset: section;
+}
+@media screen and (max-width: -0.2) {
+  .residency-steps {
+    width: 100%;
+  }
+}
+@media screen and (max-width: -0.2) {
+  .residency-steps {
+    width: 100%;
+  }
+}
+.residency-steps > div {
+  counter-increment: count;
+}
+.residency-steps > div::before {
+  content: counter(count);
+  color: #f25c05;
+}
+@media screen and (min-width: 992px) {
+  .residency-steps > div::before {
+    font-size: 156px;
+    font-weight: 600;
+    line-height: 188px;
+    transform: translate(0px, -30px);
+  }
+}
+@media screen and (max-width: 991.8px) {
+  .residency-steps > div::before {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 52px;
+    transform: translate(-24px, 60px);
+  }
+}
+@media screen and (min-width: 992px) {
+  .residency-steps {
+    margin-top: -800px;
+  }
+}
+@media screen and (max-width: 991.8px) {
+  .residency-steps {
+    margin-top: -700px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .residency-step:nth-child(2) {
+    justify-content: flex-end;
+  }
+}
+
+.form-element {
+  box-shadow: 0 0.5rem 0.6rem 0 rgba(0, 0, 0, 0.25);
 }
 
 @font-face {

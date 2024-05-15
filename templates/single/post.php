@@ -7,12 +7,8 @@
 
 <main>
 	<section class="default-page | mb-36 text-primary-100">
-
-
-
-
 		<div class="img-wrapper">
-			<?= wp_get_attachment_image(get_post_thumbnail_id(), 'full'); 		?>
+			<?= wp_get_attachment_image(get_post_thumbnail_id(), 'full'); ?>
 		</div>
 		<div class="clr-fix-8"></div>
 		<div class="paragraph">
@@ -26,8 +22,7 @@
 																		?></time> -->
 			</div>
 			<section class="single-post-content">
-				<?php the_content()
-				?>
+				<?php the_content() ?>
 			</section>
 		</div>
 	</section>
