@@ -8446,30 +8446,35 @@ section.single-post-content blockquote p {
 .residency-image-wrapper {
   z-index: -1;
 }
+@media screen and (min-width: 992px) {
+  .residency-image-wrapper {
+    transform: scale(0.8) translateY(-7.5rem);
+  }
+}
+@media screen and (max-width: 991.8px) {
+  .residency-image-wrapper {
+    transform: scale(0.8) translateY(-9.5rem);
+  }
+}
+@media screen and (max-width: 767.8px) {
+  .residency-image-wrapper {
+    transform: scale(0.8) translateY(-10rem);
+  }
+}
+@media screen and (max-width: 575.8px) {
+  .residency-image-wrapper {
+    transform: scale(1) translateY(-2rem);
+  }
+}
 
 @media screen and (min-width: 992px) {
   .dubai-residency {
     margin-top: -48px;
   }
 }
-@media screen and (max-width: 991.8px) {
-  .dubai-residency {
-    margin-top: -15px;
-  }
-}
 
 .residency-steps {
   counter-reset: section;
-}
-@media screen and (max-width: -0.2) {
-  .residency-steps {
-    width: 100%;
-  }
-}
-@media screen and (max-width: -0.2) {
-  .residency-steps {
-    width: 100%;
-  }
 }
 .residency-steps > div {
   counter-increment: count;
@@ -8477,6 +8482,7 @@ section.single-post-content blockquote p {
 .residency-steps > div::before {
   content: counter(count);
   color: #f25c05;
+  margin: 12px;
 }
 @media screen and (min-width: 992px) {
   .residency-steps > div::before {
@@ -8491,18 +8497,6 @@ section.single-post-content blockquote p {
     font-size: 44px;
     font-weight: 600;
     line-height: 52px;
-    transform: translate(-24px, 60px);
-  }
-}
-@media screen and (min-width: 992px) {
-  .residency-steps {
-    margin-top: -800px;
-  }
-}
-@media screen and (max-width: 991.8px) {
-  .residency-steps {
-    margin-top: -700px;
-    width: 100%;
   }
 }
 

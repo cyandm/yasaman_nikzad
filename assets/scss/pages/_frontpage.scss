@@ -23,29 +23,46 @@
 .residency-image {
   &-wrapper {
     z-index: -1;
+    @include media_query("lg", "min") {
+      transform: scale(0.8) translateY(-7.5rem);
+    }
+    @include media_query("lg") {
+      transform: scale(0.8) translateY(-9.5rem);
+    }
+    @include media_query("md") {
+      transform: scale(0.8) translateY(-10rem);
+    }
+    @include media_query("sm") {
+      transform: scale(1) translateY(-2rem);
+    }
   }
 }
 .dubai-residency {
   @include media_query("lg", "min") {
     margin-top: -48px;
   }
-  @include media_query("lg") {
-    margin-top: -15px;
-  }
+  // @include media_query("lg") {
+  //   margin-top: -15px;
+  //   margin: 8px;
+  // }
 }
 .residency-steps {
-  @include media_query(" md") {
-    width: 100%;
-  }
-  @include media_query(" sm") {
-    width: 100%;
-  }
+  // @include media_query("md") {
+  //   transform: translate(0px, 180px);
+  // }
+  // @include media_query("sm") {
+  //   transform: translate(0px, 220px);
+  // }
+  // @include media_query("xs") {
+  //   transform: translate(0px, 300px);
+  // }
   counter-reset: section;
   > div {
     counter-increment: count;
     &::before {
       content: counter(count);
       color: #f25c05;
+      margin: 12px;
       @include media_query("lg", "min") {
         font-size: 156px;
         font-weight: 600;
@@ -56,18 +73,25 @@
         font-size: 44px;
         font-weight: 600;
         line-height: 52px;
-        transform: translate(-24px, 60px);
+        // transform: translate(-24px, 60px);
       }
     }
   }
-
-  @include media_query("lg", "min") {
-    margin-top: -800px;
-  }
-  @include media_query("lg") {
-    margin-top: -700px;
-    width: 100%;
-  }
+  // @include media_query("lg", "min") {
+  //   margin-top: -800px;
+  // }
+  // @include media_query("lg") {
+  //   margin-top: -700px;
+  //   width: 100%;
+  // }
+  // @include media_query("md") {
+  //   margin-top: -500px;
+  //   width: 100%;
+  // }
+  // @include media_query("sm") {
+  //   margin-top: -200px;
+  //   width: 100%;
+  // }
 }
 .residency-step {
   @include media_query("lg", "min") {
@@ -76,6 +100,21 @@
     }
   }
 }
+// .home-call-btn {
+//   @include media_query("md") {
+//     margin-bottom: 48px;
+//     transform: translate(0px, 180px);
+//   }
+//   @include media_query("sm") {
+//     margin-bottom: 48px;
+//     transform: translate(0px, 220px);
+//   }
+//   @include media_query("xs") {
+//     margin-bottom: 48px;
+
+//     transform: translate(0px, 300px);
+//   }
+// }
 // Blogs
 
 // Get In Touch section

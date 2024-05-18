@@ -103,6 +103,8 @@
 
 
     <div class="clr-fix-120"></div>
+
+
     <!-- Residency -->
     <section>
         <div class="text-center">
@@ -111,47 +113,57 @@
         </div>
         <div class="clr-fix-44 d-none d-md-block"></div>
         <div>
-            <div class="residency-image-wrapper | pos-relative">
+            <div class="residency-image-wrapper | pos-absolute">
                 <img class="residency-image" src="<?php echo get_stylesheet_directory_uri() . "/assets/img/footprint-trail.png" ?>" alt="footprint">
             </div>
+            <div class="residency-steps | d-flex f-column f-nowrap">
 
-            <div class="residency-steps | d-flex f-column">
-                <div class="residency-step | d-flex f-row mi-20">
+
+
+                <div class="residency-step | d-flex f-row mi-20 f-nowrap">
                     <div class="text-primary-100">
                         <h1>Get Advice</h1>
-                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, send Do Elusmod Tempor Incididunt.</p>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit,
+                            send Do Elusmod Tempor Incididunt.</p>
                     </div>
                 </div>
 
-                <div class="residency-step | d-flex f-row mi-20">
+                <div class="residency-step | d-flex f-row mi-20 f-nowrap">
                     <div class="text-primary-100">
                         <h1>Buying Property</h1>
-                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, send Do Elusmod Tempor Incididunt.</p>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit,
+                            send Do Elusmod Tempor Incididunt.</p>
                     </div>
                 </div>
 
-                <div class="residency-step | d-flex f-row mi-20">
+                <div class="residency-step | d-flex f-row mi-20 f-nowrap">
                     <div class="text-primary-100">
                         <h1>Dubai Residency</h1>
-                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, send Do Elusmod Tempor Incididunt.</p>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit,
+                            send Do Elusmod Tempor Incididunt.</p>
                     </div>
                 </div>
             </div>
 
+
         </div>
-        <div class="d-flex f-row-reverse m-bs-">
+        <div class="home-call-btn | d-flex f-row-reverse">
             <button class="button btn-secondary" typ e="submit">
                 <span>Call Now</span><img src="<?php echo get_stylesheet_directory_uri() . "/assets/img/Search.png" ?>" alt="call now">
             </button>
         </div>
     </section>
     <div class="clr-fix-120"></div>
+
+
     <!-- blogs -->
     <section>
         <?php cyn_get_component('home/blog') ?>
         <?php cyn_get_component('swiper') ?>
     </section>
     <div class="clr-fix-120"></div>
+
+
     <!-- get in touch -->
     <section>
         <div>
@@ -180,8 +192,6 @@
         </div>
     </section>
     <div class="clr-fix-92"></div>
-
-
 
 
 </main>
