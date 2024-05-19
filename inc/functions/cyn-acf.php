@@ -10,6 +10,7 @@ function cyn_register_acf()
 	cyn_register_acf_company_settings();
 	cyn_register_acf_service_settings();
 	cyn_register_acf_frontpage_settings();
+	cyn_register_acf_consent_settings();
 }
 
 function cyn_register_acf_company_settings()
@@ -27,7 +28,7 @@ function cyn_register_acf_company_settings()
 
 	];
 
-	$location = [
+	$location     = [
 		[
 			[
 				'param' => 'post_type',
@@ -53,8 +54,6 @@ function cyn_register_acf_frontpage_settings()
 			cyn_acf_add_text('intro-name', 'Intro Name'),
 			cyn_acf_add_text('intro-job', 'Intro Job'),
 		]),
-		cyn_acf_add_tab('test'),
-
 
 	];
 
@@ -161,3 +160,34 @@ function cyn_register_acf_service_settings()
 	cyn_register_acf_group('Service Settings', $fields, $location);
 }
 //End of Services Function //
+
+//consent post type 
+
+function cyn_register_acf_consent_settings()
+{
+	$fields = [
+		cyn_acf_add_tab('comment Tab'),
+		cyn_acf_add_group('comment', '	Comment', [
+			cyn_acf_add_image('comment-img', 'Comment Image'),
+			cyn_acf_add_text('comment-name', 'Comment Name'),
+			cyn_acf_add_text('comment-position', 'Comment Position'),
+			cyn_acf_add_text('comment-txt', 'Comment Text'),
+		])
+	];
+
+	$location = [
+		[
+			[
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'consent',
+			],
+		],
+	];
+
+	cyn_register_acf_group('Consent Settings', $fields, $location);
+}
+
+
+
+// End of consent post type

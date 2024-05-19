@@ -100,8 +100,26 @@
 
 
 
+    <!-- Resume -->
+    <section>
+        <p class=" content-title | text-center fs-title text-primary fs-lg-title-sm pos-relative">Resume</p>
+    </section>
+    <div class="clr-fix-120"></div>
 
 
+    <!-- Consent -->
+    <section>
+        <?php cyn_get_component('home/Consent') ?>
+        <?php cyn_get_component('swiper') ?>
+        <div class="d-flex jc-center">
+            <!--  بعدا گذاشته شه
+                <button class="button btn-secondary" typ e="submit">
+                <span class="p-16">Add Comment</span><img src="<?php //echo get_stylesheet_directory_uri() . "/assets/img/Search.png" 
+                                                                ?>" alt="submit-picture-contact">
+
+            </button> -->
+        </div>
+    </section>
     <div class="clr-fix-120"></div>
 
 
@@ -147,7 +165,7 @@
 
 
         </div>
-        <div class="home-call-btn | d-flex f-row-reverse">
+        <div class="home-call-btn | d-flex f-row-reverse m-12">
             <button class="button btn-secondary" typ e="submit">
                 <span>Call Now</span><img src="<?php echo get_stylesheet_directory_uri() . "/assets/img/Search.png" ?>" alt="call now">
             </button>
@@ -158,8 +176,16 @@
 
     <!-- blogs -->
     <section>
-        <?php cyn_get_component('home/blog') ?>
+        <div>
+            <?php cyn_get_component('home/blog') ?>
+        </div>
         <?php cyn_get_component('swiper') ?>
+        <div class="clr-fix-24"></div>
+        <div class="d-flex jc-center">
+            <button class="button btn-secondary" typ e="submit">
+                <span class="p-16">View All</span>
+            </button>
+        </div>
     </section>
     <div class="clr-fix-120"></div>
 
@@ -168,7 +194,7 @@
     <section>
         <div>
             <div>
-                <p class="text-center fs-title text-primary fs-lg-title-sm pos-relative content-title">Get In Touch</p>
+                <p class=" content-title | text-center fs-title text-primary fs-lg-title-sm pos-relative">Get In Touch</p>
                 <form class="d-grid gap-24  pos-relative content" method="post" name="contact">
                     <div class="d-flex gap-24">
                         <div class="radius-16 bg-primary flex-1 form-element">

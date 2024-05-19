@@ -41,21 +41,8 @@
   @include media_query("lg", "min") {
     margin-top: -48px;
   }
-  // @include media_query("lg") {
-  //   margin-top: -15px;
-  //   margin: 8px;
-  // }
 }
 .residency-steps {
-  // @include media_query("md") {
-  //   transform: translate(0px, 180px);
-  // }
-  // @include media_query("sm") {
-  //   transform: translate(0px, 220px);
-  // }
-  // @include media_query("xs") {
-  //   transform: translate(0px, 300px);
-  // }
   counter-reset: section;
   > div {
     counter-increment: count;
@@ -73,25 +60,9 @@
         font-size: 44px;
         font-weight: 600;
         line-height: 52px;
-        // transform: translate(-24px, 60px);
       }
     }
   }
-  // @include media_query("lg", "min") {
-  //   margin-top: -800px;
-  // }
-  // @include media_query("lg") {
-  //   margin-top: -700px;
-  //   width: 100%;
-  // }
-  // @include media_query("md") {
-  //   margin-top: -500px;
-  //   width: 100%;
-  // }
-  // @include media_query("sm") {
-  //   margin-top: -200px;
-  //   width: 100%;
-  // }
 }
 .residency-step {
   @include media_query("lg", "min") {
@@ -100,23 +71,21 @@
     }
   }
 }
-// .home-call-btn {
-//   @include media_query("md") {
-//     margin-bottom: 48px;
-//     transform: translate(0px, 180px);
-//   }
-//   @include media_query("sm") {
-//     margin-bottom: 48px;
-//     transform: translate(0px, 220px);
-//   }
-//   @include media_query("xs") {
-//     margin-bottom: 48px;
 
-//     transform: translate(0px, 300px);
-//   }
-// }
 // Blogs
-
+.home-blog-img {
+  // max-width: 25%;
+  aspect-ratio: 1/1;
+}
+.view-more {
+  min-width: 56px;
+  min-height: 48px;
+  max-width: 56px;
+  max-height: 48px;
+}
+.post-sub {
+  width: 100%;
+}
 // Get In Touch section
 .form-element {
   box-shadow: $shadow_info;

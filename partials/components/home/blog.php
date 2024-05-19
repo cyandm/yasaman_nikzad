@@ -10,12 +10,11 @@ $posts = get_posts([
 
 ?>
 
-<!-- <div class="clr-fix-120"></div> -->
 
-<p class="get-in-touch | text-center fs-title text-primary fs-lg-title-sm pos-relative">Blogs</p>
+<p class="content-title | text-center fs-title text-primary fs-lg-title-sm">Blogs</p>
 
 
-<div>
+<div class="d-flex f-nowrap gap-32">
     <?php
     foreach ($posts  as $post) {
         cyn_get_card('post-mini', ['ID' => $post->ID]);

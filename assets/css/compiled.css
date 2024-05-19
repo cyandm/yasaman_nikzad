@@ -6291,9 +6291,9 @@ h2,
 
 h3,
 .fs-h3 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.5;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
 }
 
 h4,
@@ -6621,57 +6621,57 @@ caption,
 @media (max-width: 1440px) {
   h3,
   .fs-xxl-h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
   }
 }
 @media (max-width: 1200px) {
   h3,
   .fs-xl-h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
   }
 }
 @media (max-width: 992px) {
   h3,
   .fs-lg-h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
   }
 }
 @media (max-width: 768px) {
   h3,
   .fs-md-h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
   }
 }
 @media (max-width: 576px) {
   h3,
   .fs-sm-h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
   }
 }
 @media (max-width: 480px) {
   h3,
   .fs-xs-h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
   }
 }
 @media (max-width: 320px) {
   h3,
   .fs-xxs-h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
   }
 }
 @media (max-width: 1440px) {
@@ -8504,6 +8504,21 @@ section.single-post-content blockquote p {
   .residency-step:nth-child(2) {
     justify-content: flex-end;
   }
+}
+
+.home-blog-img {
+  aspect-ratio: 1/1;
+}
+
+.view-more {
+  min-width: 56px;
+  min-height: 48px;
+  max-width: 56px;
+  max-height: 48px;
+}
+
+.post-sub {
+  width: 100%;
 }
 
 .form-element {
