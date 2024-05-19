@@ -105,8 +105,40 @@
   }
 }
 
-.custom-div {
-  background-color: red;
-  width: var(--mehdi);
-  height: var(--mehdi);
+@include media_query("xl", "min") {
+  .home-page-main-content {
+    padding-inline-start: 384px;
+  }
 }
+
+// .landmark-percent-info-wrapper {
+//   .landmark-percent-txt-wrapper {
+//     .landmark-txt {
+//       width: 520px;
+//     }
+
+//   }
+// }
+
+.landmark-percent-txt {
+  // flex-wrap: nowrap;
+  gap: 4px;
+
+  .landmark-item {
+    width: 80%;
+    height: 2px;
+
+    &-inner {
+      display: inline-block;
+      width: var(--width);
+      height: 4px;
+      background-color: #f25c05;
+    }
+  }
+}
+
+// .custom-div {
+//   background-color: red;
+//   width: var(--mehdi);
+//   height: var(--mehdi);
+// }

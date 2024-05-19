@@ -59,8 +59,12 @@ function cyn_register_acf_frontpage_settings()
 		cyn_acf_add_group('swiper-info', 'Swiper Info', [
 			cyn_acf_add_text('swiper-txt-1', 'Swiper Text 1'),
 			cyn_acf_add_text('swiper-txt-2', 'Swiper Text 2'),
-			cyn_acf_add_link('swiper-btn', 'Swiper Button')
+			cyn_acf_add_link('swiper-btn', 'Swiper Button'),
 		]),
+		cyn_acf_add_tab('Landmark Image & Text'),
+		cyn_acf_add_image('landmark-percent-img', 'Landmark Percent Image'),
+		cyn_acf_add_text('landmark-percent-txt', 'Landmark Percent Text'),
+
 	];
 
 	//Homepage Page Slideshow
@@ -79,7 +83,7 @@ function cyn_register_acf_frontpage_settings()
 	//End of Homepage Slideshow
 
 
-	//HomePage city statistics
+	//HomePage landmark statistics
 
 	$landmarks_percent = [];
 
@@ -99,7 +103,7 @@ function cyn_register_acf_frontpage_settings()
 	array_push($fields, cyn_acf_add_tab('Landmarks'));
 	$fields = array_merge($fields, $landmarks_percent);
 
-	//End of HomePage city statistics
+	//End of HomePage landmark statistics
 
 
 	$location = [

@@ -6338,6 +6338,20 @@ body-sm,
   line-height: 1.5;
 }
 
+body-1,
+.fs-body-1 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+body-2,
+.fs-body-2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
 caption,
 .fs-caption {
   font-size: 0.85rem;
@@ -7015,6 +7029,118 @@ caption,
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.5;
+  }
+}
+@media (max-width: 1440px) {
+  body-1,
+  .fs-xxl-body-1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+@media (max-width: 1200px) {
+  body-1,
+  .fs-xl-body-1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+@media (max-width: 992px) {
+  body-1,
+  .fs-lg-body-1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+@media (max-width: 768px) {
+  body-1,
+  .fs-md-body-1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+@media (max-width: 576px) {
+  body-1,
+  .fs-sm-body-1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+@media (max-width: 480px) {
+  body-1,
+  .fs-xs-body-1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+@media (max-width: 320px) {
+  body-1,
+  .fs-xxs-body-1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+@media (max-width: 1440px) {
+  body-2,
+  .fs-xxl-body-2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  body-2,
+  .fs-xl-body-2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+}
+@media (max-width: 992px) {
+  body-2,
+  .fs-lg-body-2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+}
+@media (max-width: 768px) {
+  body-2,
+  .fs-md-body-2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+}
+@media (max-width: 576px) {
+  body-2,
+  .fs-sm-body-2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+}
+@media (max-width: 480px) {
+  body-2,
+  .fs-xs-body-2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+}
+@media (max-width: 320px) {
+  body-2,
+  .fs-xxs-body-2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
   }
 }
 @media (max-width: 1440px) {
@@ -8553,10 +8679,23 @@ section.single-post-content blockquote p {
     margin-left: 4vw;
   }
 }
-.custom-div {
-  background-color: red;
-  width: var(--mehdi);
-  height: var(--mehdi);
+@media screen and (min-width: 1200px) {
+  .home-page-main-content {
+    padding-inline-start: 384px;
+  }
+}
+.landmark-percent-txt {
+  gap: 4px;
+}
+.landmark-percent-txt .landmark-item {
+  width: 80%;
+  height: 2px;
+}
+.landmark-percent-txt .landmark-item-inner {
+  display: inline-block;
+  width: var(--width);
+  height: 4px;
+  background-color: #f25c05;
 }
 
 @font-face {
