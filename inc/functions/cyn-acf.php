@@ -63,6 +63,7 @@ function cyn_register_acf_frontpage_settings()
 		]),
 		cyn_acf_add_tab('Landmark Image & Text'),
 		cyn_acf_add_image('landmark-percent-img', 'Landmark Percent Image'),
+		// cyn_acf_add_image('landmark-percent-mobile-img', 'Landmark Percent Mobile Image'),
 		cyn_acf_add_text('landmark-percent-txt', 'Landmark Percent Text'),
 
 	];

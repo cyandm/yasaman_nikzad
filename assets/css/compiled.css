@@ -8576,6 +8576,10 @@ section.single-post-content blockquote p {
     align-items: center;
   }
 }
+.time-line-arrow {
+  object-fit: contain;
+}
+
 .results-bg {
   width: 100%;
 }
@@ -8684,11 +8688,19 @@ section.single-post-content blockquote p {
     padding-inline-start: 384px;
   }
 }
+.landmark-percent-wrapper .landmark-percent-title-wrapper {
+  z-index: -100;
+  bottom: 86%;
+}
+.landmark-percent-wrapper .landmark-percent-info-img {
+  width: max-content;
+}
+
 .landmark-percent-txt {
   gap: 4px;
 }
 .landmark-percent-txt .landmark-item {
-  width: 80%;
+  width: 100%;
   height: 2px;
 }
 .landmark-percent-txt .landmark-item-inner {
@@ -8698,6 +8710,17 @@ section.single-post-content blockquote p {
   background-color: #f25c05;
 }
 
+@media screen and (max-width: 991.8px) {
+  .landmark-percent-title-wrapper {
+    font-size: 48px;
+    line-height: 2;
+    text-align: center;
+  }
+  .landmark-percent-info-wrapper {
+    justify-items: center;
+    padding: 0 16px;
+  }
+}
 @font-face {
   font-family: "iconsax";
   src: url("../fonts/icons/iconsax/iconsax.eot");
