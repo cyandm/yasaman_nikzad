@@ -17,7 +17,7 @@ $homepage_comment = get_field("comment")
 ?>
 
 <p class="content-title | text-center fs-title text-primary fs-lg-title-sm">Consent</p>
-<div class="bg-primary radius-16">
+<div class="shadow-element | bg-primary radius-16 p-32">
     <!-- d-flex gap-24 -->
 
     <div>

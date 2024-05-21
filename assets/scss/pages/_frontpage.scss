@@ -18,7 +18,9 @@
     width: 100%;
   }
 }
-
+.shadow-element {
+  box-shadow: $shadow_info;
+}
 // Residency
 .residency-image {
   &-wrapper {

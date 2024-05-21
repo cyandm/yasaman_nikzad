@@ -97,12 +97,27 @@
  -->
 
 
-
-
-
     <!-- Resume -->
     <section>
-        <p class=" content-title | text-center fs-title text-primary fs-lg-title-sm pos-relative">Resume</p>
+        <p class="content-title | text-center fs-title text-primary fs-lg-title-sm pos-relative">Resume</p>
+        <img class="resume-clip" src="<?php echo get_stylesheet_directory_uri() . "/assets/img/Rectangle.svg" ?>" alt="resume pin">
+        <div>
+            <div class="shadow-element | radius-16 bg-primary p-32">
+                <div class=" text-primary-100">
+                    <p class="fs-h3">Real Estate Consultant</p>
+                    <div class="d-flex jc-between">
+                        <p class="fs-body">Tehran Real Estate</p>
+                        <p class="text-secondary-400">2018-2020</p>
+                    </div>
+                    <ul>
+                        <li>Provided consulting services to clients on buying, selling, and renting properties </li>
+                        <li> Negotiated real estate transactions</li>
+                        <li> Provided after-sales services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </section>
     <div class="clr-fix-120"></div>
 
