@@ -45,7 +45,9 @@
 
         <?php cyn_get_component('services/feature')  ?>
 
-        <?php cyn_get_card('homePage/landmark') ?>
+        <div class="clr-fix-120"></div>
+
+        <?php cyn_get_component('homePage/landmark-section') ?>
 
     </section>
 

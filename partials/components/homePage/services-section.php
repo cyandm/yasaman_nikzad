@@ -11,6 +11,7 @@
         'posts_per_page' => 2,
         'post_type' => 'service'
     ]);
+
     ?>
 
     <div class="services-post-main-wrapper | d-grid gap-32">
