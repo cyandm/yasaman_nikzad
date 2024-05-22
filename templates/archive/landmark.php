@@ -3,6 +3,7 @@
 <main class="landmark-main">
     <?php //box-col-sm-1 in not working 
     ?>
+
     <div class="landmark-archive-wrapper | box-col-3 box-col-lg-2 box-col-sm-1 gap-20 w-100">
         <?php
         if (have_posts()) :

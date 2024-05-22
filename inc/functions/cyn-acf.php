@@ -1,4 +1,7 @@
 <?php
+
+use RankMath\Schema\Publisher;
+
 add_action('acf/include_fields', 'cyn_register_acf');
 
 function cyn_register_acf()
@@ -65,6 +68,10 @@ function cyn_register_acf_frontpage_settings()
 		cyn_acf_add_image('landmark-percent-img', 'Landmark Percent Image'),
 		// cyn_acf_add_image('landmark-percent-mobile-img', 'Landmark Percent Mobile Image'),
 		cyn_acf_add_text('landmark-percent-txt', 'Landmark Percent Text'),
+		cyn_acf_add_tab('Blog Post'),
+		cyn_acf_add_link('blog-post-btn', 'Blog Post Button'),
+		cyn_acf_add_tab('Video Teaser'),
+		cyn_acf_add_file('teaser', 'Teaser'),
 
 	];
 
@@ -105,6 +112,32 @@ function cyn_register_acf_frontpage_settings()
 	$fields = array_merge($fields, $landmarks_percent);
 
 	//End of HomePage landmark statistics
+
+
+	//Features Section
+
+	$features_cards = [];
+
+	for ($i = 1; $i <= 3; $i++) {
+
+		$features_card = cyn_acf_add_group("feature_card_$i", __("Feature Card $i", "cyn-dm"), [
+
+			cyn_acf_add_image("feature_icon_$i", __("Icon $i", "cyn-dm")),
+
+			cyn_acf_add_text("feature_title_$i", __("Title $i", "cyn-dm")),
+
+			cyn_acf_add_text("feature_text_$i", __("Text $i", "cyn-dm")),
+
+		]);
+
+		array_push($features_cards, $features_card);
+	}
+
+	array_push($fields, cyn_acf_add_tab('Feature Cards'));
+
+	$fields = array_merge($fields, $features_cards);
+
+	//End of Features Section
 
 
 	$location = [
@@ -174,28 +207,6 @@ function cyn_register_acf_service_settings()
 
 	$fields = array_merge($fields, $slideshow_imgs);
 	//End of Services Page Slideshow
-
-
-	//Services Page Features Section
-	$features_cards = [];
-
-	for ($i = 1; $i <= 3; $i++) {
-
-		$features_card = cyn_acf_add_group("feature_card_$i", __("Feature Card $i", "cyn-dm"), [
-
-			cyn_acf_add_image("feature_icon_$i", __("Icon $i", "cyn-dm")),
-
-			cyn_acf_add_text("feature_title_$i", __("Title $i", "cyn-dm")),
-
-			cyn_acf_add_text("feature_text_$i", __("Text $i", "cyn-dm")),
-
-		]);
-
-		array_push($features_cards, $features_card);
-	}
-
-	$fields = array_merge($fields, $features_cards);
-	//End of Services Page Features Section
 
 	$location = [
 		[

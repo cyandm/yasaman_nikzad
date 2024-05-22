@@ -24,7 +24,6 @@ $time_line_items = $args['time_line_items'] ?? null;
 
         <?php endif; ?>
 
-
         <?php endforeach; ?>
 
 
