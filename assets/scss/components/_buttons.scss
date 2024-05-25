@@ -34,6 +34,7 @@
   $h-br-color,
   $br-width: 1px,
   $padding-size: $button_padding_ratio,
+  $border-radius: $radius
 ) {
   color: $color;
   background-color: $bg-color;
@@ -90,7 +91,6 @@ name of buttons that uses in project
 */
 
 #{btn-select("default")} {
-  
   @include btn(
     $color: $color_text_default,
     $bg-color: $color_background_default,
