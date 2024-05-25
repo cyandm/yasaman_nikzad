@@ -5,8 +5,6 @@
 
 <?php $landmark_percent_txt = get_field("landmark-percent-txt"); ?>
 
-<?php $landmark_percent = get_field("landmark-statistics_$i"); ?>
-
 <div class="landmark-percent-wrapper | pos-relative">
 
     <div class="landmark-percent-title-wrapper | fs-title text-natural-900 pos-absolute pos-lg-static">

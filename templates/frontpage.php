@@ -46,6 +46,7 @@
         <?php cyn_get_component('services/feature')  ?>
 
         <div class="clr-fix-120"></div>
+        <div class="clr-fix-64 d-lg-none"></div>
 
         <?php cyn_get_component('homePage/landmark-section') ?>
 

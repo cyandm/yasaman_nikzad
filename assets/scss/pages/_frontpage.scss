@@ -1,5 +1,11 @@
 @use "../utils/" as *;
 
+.content-title {
+  z-index: -100;
+  transform: translateY(4.5rem);
+  position: relative;
+}
+
 @include media_query("sm", "min") {
   .home-page-hero {
     .home-page-hero-swiper {
@@ -180,5 +186,44 @@
 
   .post-content {
     justify-content: center;
+  }
+}
+
+.landmark-archive-wrapper {
+  @include media_query("sm") {
+    --col: 1;
+  }
+}
+
+@include media_query("md", "min") {
+  .landmark-image-wrapper {
+    .landmark-img {
+      width: 100%;
+      transition: opacity $transition;
+    }
+
+    .landmark-image-text {
+      opacity: 0;
+      transition: opacity $transition;
+    }
+
+    &:hover {
+      .landmark-img {
+        opacity: 0.5;
+      }
+
+      .landmark-image-text {
+        z-index: 999;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@include media_query("md", "max") {
+  .landmark-image-wrapper:hover {
+    .landmark-img {
+      opacity: 0.5;
+    }
   }
 }
