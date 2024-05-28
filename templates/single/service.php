@@ -41,7 +41,7 @@ $time_line_items = [
 
     <div class="clr-fix-100 d-lg-none"></div>
 
-    <?php cyn_get_component('services/swiper') ?>
+    <?php cyn_get_component('services/swiper-service') ?>
 
     <div class="swiper-info-wrapper fs-body text-natural-100">
 

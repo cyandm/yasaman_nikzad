@@ -86,13 +86,12 @@ function cyn_register_acf_frontpage_settings()
 		array_push($slideshow_imgs, $slideshow_img);
 	};
 
-	array_push($fields, cyn_acf_add_tab('Images'));
+	array_push($fields, cyn_acf_add_tab('Slideshow Images'));
 	$fields = array_merge($fields, $slideshow_imgs);
 	//End of Homepage Slideshow
 
 
 	//HomePage landmark statistics
-
 	$landmarks_percent = [];
 
 
@@ -108,14 +107,12 @@ function cyn_register_acf_frontpage_settings()
 		array_push($landmarks_percent, $landmark_percent);
 	}
 
-	array_push($fields, cyn_acf_add_tab('Landmarks'));
+	array_push($fields, cyn_acf_add_tab('Landmarks'), cyn_acf_add_link('view-all', 'View All Button'));
 	$fields = array_merge($fields, $landmarks_percent);
-
 	//End of HomePage landmark statistics
 
 
 	//Features Section
-
 	$features_cards = [];
 
 	for ($i = 1; $i <= 3; $i++) {
@@ -171,7 +168,6 @@ function cyn_register_acf_service_settings()
 			cyn_acf_add_text('info-text', 'Info Text'),
 			cyn_acf_add_link('info-btn', 'Info btn'),
 		]),
-
 	];
 
 	//Services Page Info Cards Loop 
