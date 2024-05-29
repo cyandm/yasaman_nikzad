@@ -158,12 +158,14 @@ function cyn_register_acf_frontpage_settings()
 function cyn_register_acf_service_settings()
 {
 	$fields = [
+		cyn_acf_add_tab('Service timeline'),
 		cyn_acf_add_text('hours', 'Hours'),
 		cyn_acf_add_text('days', 'Days'),
 		cyn_acf_add_text('weeks', 'Weeks'),
+		cyn_acf_add_tab('Swiper Information'),
 		cyn_acf_add_text('swiper-info', 'Swiper Info'),
+		cyn_acf_add_tab('Get in Touch Button'),
 		cyn_acf_add_group('info', 'Info', [
-
 			cyn_acf_add_image('info-icon', 'Info Icon'),
 			cyn_acf_add_text('info-text', 'Info Text'),
 			cyn_acf_add_link('info-btn', 'Info btn'),
@@ -175,16 +177,18 @@ function cyn_register_acf_service_settings()
 
 	for ($i = 1; $i <= 3; $i++) {
 
-		$info_card = cyn_acf_add_group("card_$i", __("Card $i", 'cyn-dm'), [
+		$info_card = cyn_acf_add_group("info_card_$i", __("Card $i", 'cyn-dm'), [
 
-			cyn_acf_add_text("title_$i", __("Title $i", "cyn-dm")),
+			cyn_acf_add_text("title", __("Title", "cyn-dm")),
 
-			cyn_acf_add_text("text_$i", __("Text $i", "cyn-dm")),
+			cyn_acf_add_text("text", __("Text", "cyn-dm")),
 
 		]);
 
 		array_push($info_cards, $info_card);
 	}
+
+	array_push($fields, cyn_acf_add_tab('Info Cards'));
 
 	$fields = array_merge($fields, $info_cards);
 	//End OF Services Page Info Cards Loop 
@@ -200,6 +204,8 @@ function cyn_register_acf_service_settings()
 
 		array_push($slideshow_imgs, $slideshow_img);
 	}
+
+	array_push($fields, cyn_acf_add_tab('Slideshow'));
 
 	$fields = array_merge($fields, $slideshow_imgs);
 	//End of Services Page Slideshow

@@ -1,27 +1,27 @@
-<div class="swiper">
+<div class="swiper-main-wrapper">
 
-    <div class="swiper-wrapper">
+    <div class="swiper" id="homePageSwiper">
 
-        <?php
+        <div class="swiper-wrapper">
 
-        for ($i = 1; $i <= 4; $i++) {
+            <?php
 
-            $slideShow_image = get_field("image_$i");
+            for ($i = 1; $i <= 4; $i++) {
 
-            echo wp_get_attachment_image($slideShow_image, "full", false, ["class" => "img-responsive swiper-slide radius-16"]);
-        }
+                $slideShow_image = get_field("image_$i");
 
-        ?>
+                echo wp_get_attachment_image($slideShow_image, "full", false, ["class" => "img-responsive swiper-slide radius-16"]);
+            }
+
+            ?>
+
+        </div>
+
+        <div class="swiper-pagination d-flex jc-center radius-50 gap-4 pos-absolute"></div>
+
+
+        <div class="swiper-scrollbar"></div>
 
     </div>
-
-    <div class="swiper-pagination"></div>
-
-
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-
-    <div class="swiper-scrollbar"></div>
 
 </div>
