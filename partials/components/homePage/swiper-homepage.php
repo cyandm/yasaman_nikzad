@@ -19,9 +19,6 @@
 
         <div class="swiper-pagination d-flex jc-center radius-50 gap-4 pos-absolute"></div>
 
-
-        <div class="swiper-scrollbar"></div>
-
     </div>
 
 </div>

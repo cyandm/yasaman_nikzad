@@ -1,6 +1,5 @@
 <div class="services-wrapper | pos-relative">
-
-    <div class="services-title-wrapper | fs-title text-natural-900 pos-absolute pos-lg-static">
+    <div class="services-title-wrapper content-title | fs-title text-natural-900 pos-relative">
         <?php _e('What I Do', 'cyn-dm')
         ?>
     </div>

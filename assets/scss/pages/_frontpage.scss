@@ -1,9 +1,11 @@
 @use "../utils/" as *;
 
-.content-title {
-  z-index: -100;
-  transform: translateY(4.5rem);
-  position: relative;
+@include media_query("lg", "min") {
+  .content-title {
+    z-index: -100;
+    transform: translateY(4.5rem);
+    text-align: center;
+  }
 }
 
 @include media_query("sm", "min") {
@@ -123,12 +125,6 @@
 }
 
 .landmark-percent-wrapper {
-  .landmark-percent-title-wrapper {
-    z-index: -100;
-    bottom: 86%;
-    min-width: max-content;
-  }
-
   .landmark-percent-info-img {
     width: max-content;
   }
@@ -172,11 +168,6 @@
       }
     }
   }
-}
-
-.services-title-wrapper {
-  bottom: 90%;
-  z-index: -100;
 }
 
 @include media_query("lg", "max") {
@@ -234,4 +225,16 @@
     var(--color-secondary) -11.52%,
     var(--color-secondary-400) 129.61%
   );
+}
+
+.landmark-wrapper {
+  .content-title {
+    transform: translateY(6.5rem);
+  }
+}
+
+.video-teaser-main-wrapper {
+  .video-teaser-title-wrapper {
+    transform: translateY(4rem);
+  }
 }

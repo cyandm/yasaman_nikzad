@@ -7,7 +7,7 @@
 
 <div class="landmark-percent-wrapper | pos-relative">
 
-    <div class="landmark-percent-title-wrapper | fs-title text-natural-900 pos-absolute pos-lg-static">
+    <div class="landmark-percent-title-wrapper content-title | pos-relative fs-title text-natural-900 pos-lg-static">
         <?php _e('Dubai Guide', 'cyn-dm') ?>
     </div>
 
@@ -24,8 +24,7 @@
         ?>
     </div> -->
 
-        <div
-            class="landmark-percent-txt-wrapper | col-span-2 col-span-lg-3 d-flex f-column gap-20 text-natural-100 fs-body-2">
+        <div class="landmark-percent-txt-wrapper | col-span-2 col-span-lg-3 d-flex f-column gap-20 text-natural-100 fs-body-2">
 
             <div class="landmark-txt">
                 <?php echo $landmark_percent_txt ?>
@@ -39,19 +38,18 @@
                 $landmark_percent = get_field("landmark-statistics_$i");
             ?>
 
-            <div class="landmark-percent-txt | d-flex pos-relative jc-between ai-center fs-body-2 ">
+                <div class="landmark-percent-txt | d-flex pos-relative jc-between ai-center fs-body-2 ">
 
-                <span>
-                    <?php echo $landmark_percent["landmark-name_$i"] ?>
-                </span>
+                    <span>
+                        <?php echo $landmark_percent["landmark-name_$i"] ?>
+                    </span>
 
-                <div class="landmark-item | bg-natural-100">
+                    <div class="landmark-item | bg-natural-100">
 
-                    <span class="landmark-item-inner | bg-natural-100 pos-absolute"
-                        style="--width:<?php echo $landmark_percent["landmark-percent_$i"] . '%' ?>"></span>
+                        <span class="landmark-item-inner | bg-natural-100 pos-absolute" style="--width:<?php echo $landmark_percent["landmark-percent_$i"] . '%' ?>"></span>
 
+                    </div>
                 </div>
-            </div>
 
             <?php endfor; ?>
 

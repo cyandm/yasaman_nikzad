@@ -71,7 +71,8 @@ function cyn_register_acf_frontpage_settings()
 		cyn_acf_add_tab('Blog Post'),
 		cyn_acf_add_link('blog-post-btn', 'Blog Post Button'),
 		cyn_acf_add_tab('Video Teaser'),
-		cyn_acf_add_file('teaser', 'Teaser'),
+		cyn_acf_add_file('teaser-cover', 'Teaser Cover'),
+		cyn_acf_add_file('teaser-video', 'Teaser Video'),
 
 	];
 

@@ -26,14 +26,11 @@
 
     </div>
 
-    <div class="clr-fix-80 d-lg-none"></div>
-
     <section class="home-page-main-content | pi-40">
 
         <?php cyn_get_component("homePage/landmark-percent") ?>
 
         <div class="clr-fix-120 d-lg-none" id="servicesSectionMenu"></div>
-        <div class="clr-fix-64 d-lg-none"></div>
 
         <?php cyn_get_component("homePage/services-section") ?>
 
@@ -46,7 +43,10 @@
         <?php cyn_get_component('services/feature')  ?>
 
         <div class="clr-fix-120"></div>
-        <div class="clr-fix-64 d-lg-none"></div>
+
+        <?php cyn_get_component('homePage/video-teaser') ?>
+
+        <div class="clr-fix-120"></div>
 
         <?php cyn_get_component('homePage/landmark-section') ?>
 
