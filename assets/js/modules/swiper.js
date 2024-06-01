@@ -1,26 +1,72 @@
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import Swiper from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 
-const singleServiceSwiper = new Swiper('#singleServiceSwiper', {
-
+//single Service Swiper
+const singleServiceSwiper = new Swiper("#singleServiceSwiper", {
   modules: [Navigation, Pagination],
   loop: true,
 
-
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     dynamicBullets: true,
     clickable: true,
   },
 
-
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 
   scrollbar: {
-    el: '.swiper-scrollbar',
+    el: ".swiper-scrollbar",
+  },
+
+  autoHeight: true,
+});
+
+//Consent  Swiper
+const consentSwiper = new Swiper("#consentSwiper", {
+  modules: [Navigation, Pagination],
+  loop: true,
+  slidesPerView: 2,
+
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+
+  autoHeight: true,
+});
+
+// Blog
+const blogSwiper = new Swiper("#blogSwiper", {
+  modules: [Navigation, Pagination],
+  loop: true,
+  slidesPerView: 2,
+
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  scrollbar: {
+    el: ".swiper-scrollbar",
   },
 
   autoHeight: true,

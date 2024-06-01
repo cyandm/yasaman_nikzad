@@ -8794,16 +8794,10 @@ section.single-post-content blockquote p {
   overflow: hidden;
 }
 
-.content-title {
-  z-index: 100;
-}
-
-.content {
-  bottom: 56px;
-}
-@media screen and (max-width: 991.8px) {
-  .content {
-    bottom: 24px;
+@media screen and (min-width: 992px) {
+  .content-title {
+    z-index: -100;
+    transform: translateY(4rem);
   }
 }
 
@@ -8846,7 +8840,7 @@ section.single-post-content blockquote p {
 
 @media screen and (min-width: 992px) {
   .dubai-residency {
-    margin-top: -48px;
+    margin-top: 8px;
   }
 }
 

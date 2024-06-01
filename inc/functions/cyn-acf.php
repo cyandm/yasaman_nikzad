@@ -11,6 +11,7 @@ function cyn_register_acf()
 	cyn_register_acf_service_settings();
 	cyn_register_acf_frontpage_settings();
 	cyn_register_acf_consent_settings();
+	cyn_register_acf_resume_settings();
 }
 
 function cyn_register_acf_company_settings()
@@ -42,7 +43,6 @@ function cyn_register_acf_company_settings()
 }
 
 
-
 // Home Page Function //
 function cyn_register_acf_frontpage_settings()
 {
@@ -57,6 +57,7 @@ function cyn_register_acf_frontpage_settings()
 
 	];
 
+	// $fields = array_merge($fields, $features_cards);
 	$location = [
 		[
 			[
@@ -69,6 +70,8 @@ function cyn_register_acf_frontpage_settings()
 
 	cyn_register_acf_group('Home Page Settings', $fields, $location);
 }
+
+
 // End of Home Page Function //
 
 
@@ -141,6 +144,7 @@ function cyn_register_acf_service_settings()
 
 		]);
 
+
 		array_push($features_cards, $features_card);
 	}
 
@@ -166,15 +170,14 @@ function cyn_register_acf_service_settings()
 function cyn_register_acf_consent_settings()
 {
 	$fields = [
-		cyn_acf_add_tab('comment Tab'),
-		cyn_acf_add_group('comment', '	Comment', [
-			cyn_acf_add_image('comment-img', 'Comment Image'),
-			cyn_acf_add_text('comment-name', 'Comment Name'),
-			cyn_acf_add_text('comment-position', 'Comment Position'),
-			cyn_acf_add_text('comment-txt', 'Comment Text'),
-		])
-	];
 
+
+		cyn_acf_add_text("consent_position", __("Position", "cyn-dm")),
+
+		cyn_acf_add_text("consent_text", __("Text", "cyn-dm")),
+
+
+	];
 	$location = [
 		[
 			[
@@ -188,6 +191,39 @@ function cyn_register_acf_consent_settings()
 	cyn_register_acf_group('Consent Settings', $fields, $location);
 }
 
+//resume post type 
 
 
-// End of consent post type
+function cyn_register_acf_resume_settings()
+{
+	$fields = [
+
+
+		cyn_acf_add_text("resume_location", __("Location", "cyn-dm")),
+
+		cyn_acf_add_text("resume_year", __("Year", "cyn-dm")),
+
+		cyn_acf_add_text("resume_text", __("Text", "cyn-dm")),
+
+
+
+	];
+
+
+
+
+	$location = [
+		[
+			[
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'resume',
+			],
+		],
+	];
+
+	cyn_register_acf_group('resume Settings', $fields, $location);
+}
+
+
+// End of resume post type

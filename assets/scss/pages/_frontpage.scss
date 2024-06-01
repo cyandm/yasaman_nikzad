@@ -4,14 +4,12 @@
   overflow: hidden;
 }
 .content-title {
-  z-index: 100;
-}
-.content {
-  bottom: 56px;
-  @include media_query("lg") {
-    bottom: 24px;
+  @include media_query("lg", "min") {
+    z-index: -100;
+    transform: translateY(4rem);
   }
 }
+
 .button {
   background: linear-gradient(107.24deg, #f25c05 -11.52%, #f21305 129.61%);
   @include media_query("xs") {
@@ -41,7 +39,7 @@
 }
 .dubai-residency {
   @include media_query("lg", "min") {
-    margin-top: -48px;
+    margin-top: 8px;
   }
 }
 .residency-steps {
