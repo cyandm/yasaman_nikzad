@@ -4982,4 +4982,13 @@
     }
     // autoHeight: true,
   });
+
+  // assets/js/modules/video-teaser.js
+  document.getElementById("icon-test").addEventListener("click", function(event2) {
+    event2.preventDefault();
+    var videoCover = document.querySelector(".video-cover");
+    var video = document.getElementById("video-teaser");
+    videoCover.classList.add("hidden");
+    video.play();
+  });
 })();
