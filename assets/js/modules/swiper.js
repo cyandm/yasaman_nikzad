@@ -49,25 +49,25 @@ const consentSwiper = new Swiper("#consentSwiper", {
 });
 
 // Blog
-const blogSwiper = new Swiper("#blogSwiper", {
-  modules: [Navigation, Pagination],
-  loop: true,
-  slidesPerView: 2,
+// const blogSwiper = new Swiper("#blogSwiper", {
+//   modules: [Navigation, Pagination],
+//   loop: true,
+//   slidesPerView: 2,
 
-  pagination: {
-    el: ".swiper-pagination",
-    dynamicBullets: true,
-    clickable: true,
-  },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     dynamicBullets: true,
+//     clickable: true,
+//   },
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
 
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+//   scrollbar: {
+//     el: ".swiper-scrollbar",
+//   },
 
-  autoHeight: true,
-});
+//   autoHeight: true,
+// });

@@ -9,7 +9,6 @@
     <!-- Resume -->
     <section>
         <?php cyn_get_card('resume') ?>
-        <div class="d-flex jc-center"> </div>
     </section>
     <div class="clr-fix-120"></div>
 
@@ -79,9 +78,11 @@
         <div>
             <?php cyn_get_component('home/swiper-blogs') ?>
             <?php cyn_get_component('home/blog') ?>
-
         </div>
+
         <div class="clr-fix-24"></div>
+
+
         <div class="d-flex jc-center">
             <button class="button btn-secondary" typ e="submit">
                 <span class="p-16">View All</span>

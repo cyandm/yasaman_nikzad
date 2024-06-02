@@ -25,9 +25,7 @@
 					<p> <?php echo get_comments_number();
 						_e('Comments', 'cyn-dm') ?> </p>
 				</div>
-				<!-- <time datetime="<?php //echo get_the_date('c'); 
-										?>" itemprop="datePublished"><?php //echo get_the_date(); 
-																		?></time> -->
+				
 			</div>
 			<section class="single-post-content">
 				<?php the_content() ?>

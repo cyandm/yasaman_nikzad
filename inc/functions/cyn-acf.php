@@ -193,7 +193,6 @@ function cyn_register_acf_consent_settings()
 
 //resume post type 
 
-
 function cyn_register_acf_resume_settings()
 {
 	$fields = [
@@ -205,12 +204,7 @@ function cyn_register_acf_resume_settings()
 
 		cyn_acf_add_text("resume_text", __("Text", "cyn-dm")),
 
-
-
 	];
-
-
-
 
 	$location = [
 		[
@@ -222,7 +216,7 @@ function cyn_register_acf_resume_settings()
 		],
 	];
 
-	cyn_register_acf_group('resume Settings', $fields, $location);
+	cyn_register_acf_group('Resume Settings', $fields, $location);
 }
 
 

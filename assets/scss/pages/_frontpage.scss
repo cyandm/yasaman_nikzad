@@ -19,6 +19,12 @@
 .shadow-element {
   box-shadow: $shadow_info;
 }
+//resume
+.resume {
+  @include media_query("lg") {
+    flex-wrap: wrap;
+  }
+}
 // Residency
 .residency-image {
   &-wrapper {
