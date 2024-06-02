@@ -211,6 +211,16 @@
   }
 }
 
+@include media_query("lg", "max") {
+  .landmark-wrapper,
+  .landmark-title-wrapper {
+    font-size: 48px;
+    line-height: 2;
+    text-align: center;
+    transform: translateY(0) !important;
+  }
+}
+
 @include media_query("md", "max") {
   .landmark-image-wrapper:hover {
     .landmark-img {
@@ -279,5 +289,15 @@
 @media (max-width: 768px) {
   .video-wrapper {
     width: 100%;
+  }
+}
+
+@include media_query("lg", "max") {
+  .video-teaser-main-wrapper,
+  .video-teaser-title-wrapper {
+    font-size: 48px;
+    line-height: 2;
+    text-align: center;
+    transform: translateY(0) !important;
   }
 }

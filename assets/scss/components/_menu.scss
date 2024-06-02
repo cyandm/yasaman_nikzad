@@ -28,6 +28,15 @@ nav.menu {
   }
 }
 
+.header-menu {
+  .not-active {
+    &::before {
+      background: 0 !important;
+      content: none !important;
+    }
+  }
+}
+
 .menu-footer-container {
   .footer-menu {
     .current-menu-item {

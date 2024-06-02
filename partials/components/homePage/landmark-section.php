@@ -7,7 +7,7 @@ $landmark_btn_title = $landmark_btn['title'];
 ?>
 
 <div class="landmark-wrapper | d-flex f-column gap-40 ai-center pos-relative">
-    <div class="content-title | fs-title text-natural-900 pos-relative">
+    <div class="landmark-title-wrapper content-title | fs-title text-natural-900 pos-relative">
         <?php _e('Dubai', 'cyn-dm')
         ?>
     </div>
