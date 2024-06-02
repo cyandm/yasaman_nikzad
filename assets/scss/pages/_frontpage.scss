@@ -1,5 +1,26 @@
 @use "../utils/" as *;
 
+//all
+.main {
+  overflow: hidden;
+}
+.content-title {
+  @include media_query("lg", "min") {
+    z-index: -100;
+    transform: translateY(4rem);
+  }
+}
+
+.button {
+  background: linear-gradient(107.24deg, #f25c05 -11.52%, #f21305 129.61%);
+  @include media_query("xs") {
+    width: 100%;
+  }
+}
+.shadow-element {
+  box-shadow: $shadow_info;
+}
+
 @include media_query("lg", "min") {
   .content-title {
     z-index: -100;
@@ -300,4 +321,112 @@
     text-align: center;
     transform: translateY(0) !important;
   }
+}
+
+//resume
+.resume {
+  @include media_query("lg") {
+    flex-wrap: wrap;
+  }
+
+  .resume-main-wrapper {
+    max-width: 384px;
+    height: 312px;
+    display: grid;
+  }
+}
+//consent
+.consent {
+  max-width: 496px;
+}
+.consent-image-customer {
+  max-width: 88px;
+  max-height: 88px;
+}
+
+// Residency
+.residency-image {
+  &-wrapper {
+    z-index: -1;
+    @include media_query("lg", "min") {
+      transform: scale(0.8) translateY(-7.5rem);
+    }
+    @include media_query("lg") {
+      transform: scale(0.8) translateY(-9.5rem);
+    }
+    @include media_query("md") {
+      transform: scale(0.8) translateY(-10rem);
+    }
+    @include media_query("sm") {
+      transform: scale(1) translateY(-2rem);
+    }
+  }
+}
+.dubai-residency {
+  @include media_query("lg", "min") {
+    margin-top: 8px;
+  }
+}
+.residency-steps {
+  counter-reset: section;
+  > div {
+    counter-increment: count;
+    &::before {
+      content: counter(count);
+      color: #f25c05;
+      margin: 12px;
+      @include media_query("lg", "min") {
+        font-size: 156px;
+        font-weight: 600;
+        line-height: 188px;
+        transform: translate(0px, -30px);
+      }
+      @include media_query("lg", "max") {
+        font-size: 44px;
+        font-weight: 600;
+        line-height: 52px;
+      }
+    }
+  }
+}
+.residency-step {
+  @include media_query("lg", "min") {
+    &:nth-child(2) {
+      justify-content: flex-end;
+    }
+  }
+}
+
+// Blogs
+.home-blog-img {
+  // max-width: 25%;
+  aspect-ratio: 1/1;
+  max-width: 496px;
+  max-height: 560px;
+}
+.view-more {
+  min-width: 56px;
+  min-height: 48px;
+  max-width: 56px;
+  max-height: 48px;
+}
+
+.post {
+  max-width: 496px;
+}
+
+.post-sub {
+  width: 100%;
+  border: 1px solid #acacac;
+  border-radius: 0 0 16px 16px;
+}
+
+.blur-background {
+  backdrop-filter: blur(10px);
+  background: rgb(255, 255, 255, 0.3);
+}
+
+// Get In Touch section
+.form-element {
+  box-shadow: $shadow_info;
 }

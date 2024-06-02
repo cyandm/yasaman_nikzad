@@ -13,6 +13,8 @@ function cyn_register_acf()
 	cyn_register_acf_company_settings();
 	cyn_register_acf_service_settings();
 	cyn_register_acf_frontpage_settings();
+	cyn_register_acf_consent_settings();
+	cyn_register_acf_resume_settings();
 }
 
 function cyn_register_acf_company_settings()
@@ -224,3 +226,60 @@ function cyn_register_acf_service_settings()
 	cyn_register_acf_group('Service Settings', $fields, $location);
 }
 //End of Services Function //
+
+//consent post type 
+
+function cyn_register_acf_consent_settings()
+{
+	$fields = [
+
+
+		cyn_acf_add_text("consent_position", __("Position", "cyn-dm")),
+
+		cyn_acf_add_text("consent_text", __("Text", "cyn-dm")),
+
+
+	];
+	$location = [
+		[
+			[
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'consent',
+			],
+		],
+	];
+
+	cyn_register_acf_group('Consent Settings', $fields, $location);
+}
+
+//resume post type 
+
+function cyn_register_acf_resume_settings()
+{
+	$fields = [
+
+
+		cyn_acf_add_text("resume_location", __("Location", "cyn-dm")),
+
+		cyn_acf_add_text("resume_year", __("Year", "cyn-dm")),
+
+		cyn_acf_add_text("resume_text", __("Text", "cyn-dm")),
+
+	];
+
+	$location = [
+		[
+			[
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'resume',
+			],
+		],
+	];
+
+	cyn_register_acf_group('Resume Settings', $fields, $location);
+}
+
+
+// End of resume post type
