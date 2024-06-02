@@ -11,7 +11,7 @@ $resume_cards = get_posts([
 <div class="content-title | text-center fs-title text-primary fs-lg-title-sm">
     <?php _e('Resume', 'cyn-dm') ?>
 </div>
-<div class="d-flex f-row f-nowrap gap-24 resume">
+<div class="d-flex f-row f-nowrap gap-24 jc-center resume">
 
     <?php foreach ($resume_cards as $resume_card) : ?>
 

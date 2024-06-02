@@ -24,7 +24,23 @@
   @include media_query("lg") {
     flex-wrap: wrap;
   }
+
+  .resume-main-wrapper {
+    max-width: 384px;
+    height: 312px;
+    display: grid;
+  }
 }
+//consent
+.consent {
+  max-width: 496px;
+}
+.consent-image-customer {
+  max-width: 88px;
+  max-height: 88px;
+}
+
+
 // Residency
 .residency-image {
   &-wrapper {
@@ -82,6 +98,8 @@
 .home-blog-img {
   // max-width: 25%;
   aspect-ratio: 1/1;
+  max-width: 496px;
+  max-height: 560px;
 }
 .view-more {
   min-width: 56px;
@@ -89,9 +107,22 @@
   max-width: 56px;
   max-height: 48px;
 }
+
+.post {
+  max-width: 496px;
+}
+
 .post-sub {
   width: 100%;
+  border: 1px solid #acacac;
+  border-radius: 0 0 16px 16px;
 }
+
+.blur-background {
+  backdrop-filter: blur(10px);
+  background: rgb(255, 255, 255, 0.3);
+}
+
 // Get In Touch section
 .form-element {
   box-shadow: $shadow_info;

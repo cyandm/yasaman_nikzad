@@ -28,7 +28,6 @@ $post_categories = get_the_category();
                                 <?php else : ?>
                                     <?php echo $term->name . ', ' ?>
                                 <?php endif; ?>
-
                             </a>
                         <?php endforeach; ?>
                     </div>
