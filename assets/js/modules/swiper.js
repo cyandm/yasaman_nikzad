@@ -1,27 +1,58 @@
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 
-//single Service Swiper
-const singleServiceSwiper = new Swiper("#singleServiceSwiper", {
+
+//Single Service Swiper
+const singleServiceSwiper = new Swiper('#singleServiceSwiper', {
+
   modules: [Navigation, Pagination],
   loop: true,
 
+
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     dynamicBullets: true,
     clickable: true,
   },
 
+
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 
   scrollbar: {
-    el: ".swiper-scrollbar",
+    el: '.swiper-scrollbar',
   },
 
-  autoHeight: true,
+  // autoHeight: true,
+});
+
+
+//Homepage Swiper
+const homePageSwiper = new Swiper('#homePageSwiper', {
+
+  modules: [Navigation, Pagination],
+  loop: true,
+
+
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+    clickable: true,
+  },
+
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+
+  // autoHeight: true,
 });
 
 //Consent  Swiper
